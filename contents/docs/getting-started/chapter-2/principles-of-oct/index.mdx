@@ -1,0 +1,77 @@
+---
+title: Physical Principles of Operation of OCT
+---
+
+## Electromagnetic Waves
+
+A wave is the propagation of a disturbance in space and time, usually within a medium (e.g. air, water). If the reciprocating disturbance occurs periodically around a mean value it is called an oscillation. Waves are given characteristic properties such as wavelength, period and phase. The period is defined to be the time it takes for the vibrating object to make one cycle or oscillation and return to its original position. The inverse of period is called the frequency, f where f=1/T. Frequency is measured in hertz (Hz) which is a cycle or oscillation per second. Wavelength is the distance between two successive peaks of the wave and phase is the quantity that expresses the departure of an oscillating body from its equilibrium position for a given time. We say of two waves that they have phase shift if they have different amplitude at the same time.
+
+Waves can be longitudinal or transverse. Transverse waves cause the medium to move perpendicular to the direction of the wave. Longitudinal waves cause the medium to move parallel to the direction of the wave. Electromagnetic waves are transverse and consist of oscillating electric and magnetic fields which oscillate in planes perpendicular to each other and perpendicular to the direction of propagation. Electromagnetic waves propagate in vacuum at a speed of c=299,792,458 m/s the speed of light and through matter at a slower speed. Electromagnetic waves are produced by accelerated or decelerated charged particles.
+
+<img alt='Diagram of the Eye' src='/figures/2.png' />
+_Figure 2: Schematic representation of an electromagnetic wave._
+
+Wavelength and frequency are related by the relationship c=λ*f, where λ is the wavelength and f is the frequency. So they are inversely proportional sizes. Frequency is directly related to wave energy by the formula E=h*f, where h is Plank's constant. If the electromagnetic wave or electromagnetic radiation has enough energy so that during its interaction with matter it can ionize it, detaching electrons and changing its structure, then we call the radiation ionizing. Such radiation in the spectrum are γ-rays, X-rays, ultraviolet and some frequencies of the optical spectrum. Otherwise, we call the radiation non-ionizing.
+
+<img alt='Diagram of the Eye' src='/figures/3.png' />
+_Figure 3: The Electromagnetic Spectrum Calibrated. (Verhoeven, Geert. (2017). The
+reflection of two fields – Electromagnetic radiation and its role in (aerial) imaging.
+55. 13-18. 10.5281/zenodo.3534245)._
+
+The general solution of the wave equation is 𝑦(𝑟,𝑡) = 𝐴𝑒𝑖(𝑘𝑟±𝜔𝑡+𝜑) or y(r,t)=A\*sin(kr+-ωt+φ) with φ being the phase of the wave and r the coordinates in a multidimensional system. The circular frequency ω and the wave vector k are basic quantities in wavelet defined as ω=2πf, k=2π/λ. The wave vector even indicates the direction of propagation of the wave.
+
+## Wave Interference
+
+Interference is the interaction between two or more waves, resulting in a new waveform. If two electromagnetic waves travel together in a region of space, we will add them to see their interaction.
+
+## Polarization of waves
+
+Another important physical quantity for an electromagnetic wave is the polarization P. The plane of polarization is identical to the plane of oscillation of the electric field.
+
+## Wave Coherence
+
+The coherence between two or more waves is called their relative phase variation. In an interference image depending on the degree of coherence of the involved waves various features such as the intensity and position of the interference fringes are affected. If the phase difference between the waves is constant, either equal to or different from zero, we call the waves coherent. Accordingly, if their relative phase changes the waves are incoherent or partially incoherent.
+
+## Low Coherence Interference - Symbolometer
+
+Due to the high speed of the electromagnetic radiation the intensity of the backscattered radiation cannot be measured directly so we measure it indirectly through the intensity of the interference from an interferometer. Thus the interferometer is a key tool in OCT operation. Interferometers are devices that use two or more light sources and create interference images.
+
+The simplest interferometer we will consider using is Michelson's. The arrangement consists of the source, the beam splitter and two movable members with mirrors. The source beam is split into two identical beams by the splitter and after each one has travelled to an arm of the interferometer they are then reflected by the mirrors, which we consider to be perfect reflectors, and reunited in the beam splitter giving the interference image. We keep one mirror fixed, this is where we usually put the sample and so it is called the sample arm, and the other part with the movable mirror is called the reference arm. Depending on the position of the reference arm we have a phase difference and the interference image changes.
+
+<img alt='Diagram of the Eye' src='/figures/4.png' />
+_Figure 4: Schematic illustration of a simple Michelson interferometer with a movable
+mirror and beam splitter. Also shown are the interference images depending on the
+coherence and the phase difference. (Rocky S. Tuan, Cecilia W. Lo "Developmental
+Biology Protocols: Volume I (Methods in Molecular Biology, 135)", Springer-Verlag
+New York, LLC, ISBN-10:0896038521, ISBN-13:9780896038523)._
+
+## Matter Radiation Interaction
+
+During the propagation of an electromagnetic wave through matter, i.e. through any medium other than vacuum, its behaviour changes. When the radiation encounters a medium discontinuity, i.e. a different refractive index, a part of it will be reflected so it will go back to the first medium and part will be refracted into the second medium where other interactions will occur. There are many ways of interaction, the main one is that radiation is absorbed by atoms and molecules of the medium and re-emitted in directions depending on the type of interaction.
+
+In a medium, the electrons of an atom or molecule can either go up a number of energy levels or go down by absorbing and emitting energy respectively. During the absorption of electromagnetic radiation the electron interacts with the photon converting the energy of the radiation into internal. When this electron drops in energy level it will re-emit radiation and the atom will lose energy. The damping of electromagnetic oscillation in a non-scattering medium has to do with reducing the intensity of radiation which is exponential and is described by the Lambert-Beer law where the absorption coefficient depends on the frequency of the incident radiation.
+For example, chromophore tissues generally absorb strongly with the most important absorbing at 250nm-2.5μm. The spectral range between 600-1200nm is called the therapeutic window as at these frequencies the most important chromophore tissues absorb little allowing a great depth of penetration in radiation allowing better image depth in OCT in this frequency window.
+
+<img alt='Diagram of the Eye' src='/figures/5.png' />
+_Figure 5: The absorption coefficient for basic tissues and water depending on the
+incident radiation. (Al-Farawn, Mahdi. (2013). A Comparative Study Between Co2 Laser
+And Mechanical Rotary System Abrasion Of Hyperpigmentation Of The Gingiva. Journal
+of Kerbala University. 11. 230-237.)_
+
+Generally speaking, in a medium different than vacuum, light travels at a different speed, less than the speed of light. The quantity that describes the speed of radiation in matter is called the refractive index n and it’s dimensionless. It is defined by n=c/u and its value in a vacuum is 1. The refractive index determines through Snell's law how much the radiation will deviate from its course and be refracted when changing media, according to the formula n1*sinθ1=n2*sinθ2 with θ1, θ2 being the deviation of the light beam from the perpendicular. When the speed of light in the material changes, the wavelength also changes so that the frequency remains constant, so the refractive index depends on the wavelength of the incident radiation. That means radiation of different wavelengths interact differently in the same medium and have different velocities to each other. The phenomenon is called dispersion and is strongly observed in prisms where white light is broken down into its individual wavelengths. Another phenomenon is diffraction which is a purely wave phenomenon and is observed when the wave encounters an obstacle or a slit where the wave appears to bend around the obstacle. The reason this happens is that every part of the obstacle or opening that the wave encounters become secondary sources of the wave propagating new wave fronts that interfere to each other.
+
+Finally an important phenomenon in radiation matter interaction, which in fact we measure with OCT, it is the scattering of light. After the absorption of radiation by an atom, it re-emits it in different directions with different intensities. Scattering is the change in the course and intensity of radiation after the interaction with an atom or another particle. Scattering is characterized as elastic or inelastic, depending on whether or not the energy of the photon changes after interacting with the scatterer. The scattering of light is determined by characteristics such as the size and shape of the scatterers in relation to the wavelength of the radiation and their density.
+
+A type of elastic scattering is Rayleigh scattering which generally concerns scatterers shorter than the wavelength of the radiation and we consider the atoms far from each other and unorganised.
+
+However, when the atoms are denser with each other, the various directions begin to weaken due to destructive interference and the forward scattering dominates as it is in phase and interferes reinforcingly. The more dense and organized a medium is we will observe almost entirely forward scattering and the radiation stops having angular dispersion in the new medium and we are led to the new refractive index.
+
+We use OCT in heterogeneous media with various atoms and molecules usually structured in much larger sizes than the wavelength of the radiation we use. Thus the scattering occurs in dense and large particles and is called Mie scattering. In essence, it is a more general case of Rayleigh in which the scattered radiations from the various points of the particle interfere to each other. The particle has a different refractive index than its surroundings and because of its size it further aids forward scattering. So inside the tissues the dominant scattering angles are small.
+
+OCT uses backscattered radiation to create the image so we understand that most of the signal from the scatter is useless. Most tissues have a variety of scatterers of different shapes and sizes. Thus there is a variety of scatterers and locally different refractive indices are created leading to radiation being scattered by diffraction.
+
+Backscattered radiation has a low probability of each scattering so its signal is small. Backscattered light can come from either diffusion, either from multiple scattering within the tissue or simply from backscattering of the radiation from a specific point. We have diffuse reflection due to the rough surface of the material it hit. By scattering the radiation is reflected at a number of angles as an incident ray is partially reflected by the first particle and a portion enters the tissue, and is again reflected by the interface with the second particle, enters it, collides with the third and so on, creating a series of primary scattered rays in random directions, which in turn, through the same mechanism, produce a large number secondary scattered rays, which produce tertiary rays and so on until they reach the surface and exit in random directions.
+
+All this needs to be generalized for many scatterers and modelled in order to find the influence on the OCT signal. We have assumed so far that the tissue in the interferometer arm is an ideal mirror and merely adds a time difference without affecting the amplitude and coherence of the radiation. But we can model for transparent tissues like the eye with low reflectance layers.
+
+In conclusion the wavelength of the radiation is a very important factor. Within the near-infrared window of a biological tissue, the central wavelength of the source determines the maximum depth of tissue penetration due to scattering and absorption properties. When the wavelength is below 1,000 nm, the scattering is strong as the wavelength and particle size in the tissue are close. This is usually modelled with Mie scattering theory. The absorption increases considerably after 1,000 nm and reaches a maximum at about 1,400 nm. Water in tissue strongly attenuates radiation. Therefore, differently wavelengths are used for a variety of samples. For example, an OCT system with a center wavelength of 1,550 nm is good for measuring hard tissue but not suitable for soft tissue imaging because the light is absorbed by blood or water. The composition and uniformity of the sample is another factor that affects the results. Samples with rough surfaces or inhomogeneous composition show a lower penetration depth and worse image contrast due to scattering. Another important factor is the difference in refractive index between sample and background. Optical scattering occurs due to mismatches in the refractive index of the various tissue components. Therefore, materials with similar refractive index will have similar OCT images. For example, the retinal layers are difficult to distinguish because of their similar compositions.

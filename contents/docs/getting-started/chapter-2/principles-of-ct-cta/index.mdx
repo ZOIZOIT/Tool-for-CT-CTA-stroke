@@ -1,0 +1,73 @@
+---
+title: Physical Principles of Operation
+---
+
+CT and CTA use X rays that are produced by the bombardment of a thick target with energetic electrons. These electrons produce Bremsstrahlung and characteristic radiation after a complex sequence of collisions and scattering processes during the slowing down process. Both characteristic and Bremsstrahlung radiation contribute to the overall X-ray spectrum of CT.
+
+**Bremsstrahlung** radiation (or braking radiation) is produced when an electron changes its trajectory while approaching an atomic nucleus (due to attractive Coulomb forces) and therefore, electromagnetic radiation is emitted.
+
+**Characteristic radiation** is produced when a fast electron collides with an orbit electron and provides kinetic energy that exceeds the binding energy of the electron in that shell. The highest binding energy is that of the inner shell, K, and decreases for the outer shells. The scattered primary electron carries away the difference of kinetic energy and binding energy and a vacancy is created in the shell. An electron of an outer shell fills that vacancy and therefore, a photon is emitted with energy equivalent to the difference of the binding energies of the two shells. K radiation is the characteristic radiation produced by an electron transition to the K shell and L radiation for transitions to the L shell.
+
+Computed tomography (CT) is a radiographic process based on the radiation – mater interaction that happens between the X rays produced from the tube and the patients' tissues. The final product is a photon attenuation map of the patient based on the attenuation of a beam of X rays as it passes through a certain tissue. Image acquisition process also involves the measurement of X ray transmission profiles through a patient for a large number of views. A profile from each view is produced with the help of a detector arc consisting of several hundreds of detector elements (detector row). During the rotation of the system, a large number of views can be obtained. These transmission profiles are used to reconstruct the CT image, composed of pixels.
+
+Each pixel's value is associated with the attenuation of the underlying tissue, based on the linear attenuation coefficient μ (m-1). The linear attenuation coefficient depends on the material (composition, density) and the photon energy. This is described by Beer’s law according to the equation:
+
+`I(x) = I₀ · e^(–μx)`
+
+where
+
+I(x) = intensity of the attenuated X ray beam,
+
+I₀ = intensity of unattenuated X ray beam
+
+μ = the linear attenuation coefficient
+
+x = the thickness of the material
+
+However, Beer’s law describes the attenuation of the primary beam only, and scattered radiation cannot be included. It also describes a monoenergetic photon beam and for polyenergetic X rays, Beer’s law should, in principle, be integrated across the entire range of photon energies present in the X-ray spectrum. In practice, CT uses polyenergetic beams. Finally, in CT reconstruction algorithms that use back projection methods (it is going to be mentioned later), Beer’s law is typically not implemented. In such cases, using one value representing the average photon energy of the X ray spectrum leads to inaccuracies, such as beam hardening artifacts.
+
+Different tissues have different attenuation coefficients μ, therefore, attenuate the X ray beam differently. For reconstruction, the attenuation along a path through the body is modeled using a discretized version of Beer’s Law, summing the effects across individual voxels. Each voxel represents a different linear attenuation coefficient volume element of a 4x4 matrix.
+
+<img alt='Diagram of the Eye' src='/figures/2_2.png' />
+_Figure 2.2: Each element in the matrix can, in principle, have a different value
+of the associated linear attenuation coefficient._
+
+In conclusion, the essential data required for CT imaging are the measured intensities of both the attenuated I(d) X-ray beam and the unattenuated I0 beam. Using these measurements, image reconstruction methods can be used to calculate a matrix of linear attenuation coefficients, which forms the foundation of the CT image.
+
+The representation of the relative density of tissues based on their X-ray attenuation on CT is achieved by using a standardized scale, the **Hounsfield units (HU)**. A matrix of HU (HU_material) is a transformation of a matrix of reconstructed linear attenuation coefficients (μ_material). HU scale is expressed relative to the linear attenuation coefficient of water at room temperature (μ_water) according to the following equation:
+
+`HU_material = [ (μ_material - μ_water) / μ_water ] * 1000`
+
+This equation shows that HU_water = 0 (μ_material = μ_water) and HU_air = -1000 (μ_material = 0). In the same way the HU of each tissue can be calculated. In general, dense tissues like bone correspond to higher HU units while others like lung (large cavities filled with air) correspond to lower HU units. Except water and air, it is important to observe that other tissues and substances exhibit a non-linear relationship of their linear attenuation coefficient relative to that of water. In such cases HU values vary at different tube voltages. This is more notable for tissues with high effective atomic number (contrast enhanced blood, bone).
+
+With a minimum bit depth 12 for a pixel HU have a range from –1024 HU to +3071 HU, which can cover most clinically relevant tissues. Extending the Hounsfield scale by extending the bit depth can be helpful for materials with high density and a high linear attenuation coefficient.
+
+The eight-bit greyscale used by the monitor for visualization of CT creates only 256 grey values for each pixel. Window width is the range of HU from white to black and window level is the central HU value (for a selected window width). Window width and level must be chosen carefully to visualize optimally the referring tissue. Grayscale, window width and window depth are chosen based on the diagnostic aim. It is important to keep in mind that deviation between expected and observed HU values in clinical practice are common and may occur due to a variety of reasons based on the scanning system or the tissue variation over time.
+
+The linear transformation creates the Hounsfield scale, which is represented in shades of gray. Tissues with higher density and greater X-ray absorption have positive HU values and appear brighter, while less dense tissues that absorb fewer X-rays have negative HU values and appear darker on the image. Typical values of HU for certain tissues and organs include:
+
+air: -1000 HU
+
+bone (cortical): >1000 HU
+
+bone (trabecular): 300 to 800 HU
+
+brain (grey matter): 40 HU
+
+brain (white matter): 30 HU
+
+subcutaneous fat: -100 to -115 HU
+
+liver: 45-50 HU
+
+lungs: -950 to -650 HU
+
+metal: >3000 HU
+
+muscle: 45 to 50 HU
+
+renal cortex: 25 to 30 HU
+
+spleen: 40 to 45 HU
+
+water: 0 HU (by definition)
