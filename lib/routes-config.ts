@@ -38,22 +38,72 @@ export const ROUTES: EachRoute[] = [
         href: '/principles-of-ct-cta',
       },
       {
-        title: 'Overview of OCT Systems and Methods',
-        href: '/overview-of-oct',
+        title: 'The Image System',
+        href: '/the-image-system',
       },
       {
-        title: 'Medical Applications',
-        href: '/medical-applications',
+        title: 'Image Reconstruction, Processing and Acquisition',
+        href: '/image-reconstruction-processing-and-acquisition',
+      },
+      {
+        title: 'Image Quality',
+        href: '/image-quality',
+      },
+      {
+        title: 'Contrast Agents',
+        href: '/contrast-agents',
+      },
+      {
+        title: 'Radiation Protection',
+        href: '/radiation-protection',
       },
     ],
   },
   {
-    title: 'Eye Diseases with OCT Images',
-    href: '/eye-diseases',
+    title: 'Hemorrhage',
+    href: '/chapter-3',
+    noLink: true,
+    items: [
+      {
+        title: 'Introduction',
+        href: '/introduction',
+      },
+      {
+        title: 'Intracerebral Hemorrhage',
+        href: '/intracerebral-hemorrhage',
+      },
+      {
+        title: 'Subarachnoid Hemorrhage',
+        href: '/subarachnoid-hemorrhage',
+      },
+      {
+        title: 'Subdural or Epidural Hemorrhage',
+        href: '/subdural-or-epidural-hemorrhage',
+      },
+    ],
+  },
+  {
+    title: 'Ischemia',
+    href: '/chapter-4',
+    noLink: true,
+    items: [
+      {
+        title: 'Introduction',
+        href: '/introduction',
+      },
+      {
+        title: 'Cerebral Arteries Distribution',
+        href: '/cerebral-arteries-distribution',
+      },
+      {
+        title: 'Imaging of Acute Ischemic Stroke (AIS)',
+        href: '/imaging-of-acute-ischemic-stroke',
+      },
+    ],
   },
   {
     title: 'The educational application',
-    href: '/chapter-4',
+    href: '/chapter-6',
     noLink: true,
     items: [
       {

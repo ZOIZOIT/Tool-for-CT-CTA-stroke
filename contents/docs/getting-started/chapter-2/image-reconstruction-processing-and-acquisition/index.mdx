@@ -1,0 +1,26 @@
+---
+title: Image Reconstruction, Processing and Acquisition
+---
+
+CT image **reconstruction** is the procedure of transformation of raw projection data (measured X-ray attenuation from multiple angles) into cross-sectional images. This is achieved through mathematical techniques that convert linear attenuation profiles into images. The basis for reconstruction is that during a CT scan, plenty of measurements of the transmission of X-rays through a patient are acquired at many angles.
+
+**Filtered backprojection** is the most frequently used reconstruction technique. The technique of filtered backprojection involves three main domains - spaces, the object space (contains the linear attenuation coefficients), the Radon space also known as sinogram space (projection data collected from multiple angles) and the Fourier space (represents the frequency components of the image). A high-pass filter should be applied to each one of the 1D Fourier transforms.
+
+<img alt='Diagram of the Eye' src='/figures/2_4.png' />
+_Figure 2.4: the interrelations between the three domains for one projection angle._
+
+Types of CT **image acquisition** techniques include:
+
+- Scan projection radiograph –SRP: A pre-scan image is used to plan the CT scan. It shows the patient’s anatomy in a single projection, helping the technologist define the scan range, field of view, and angulation.
+
+- Axial CT scan: The X-ray tube rotates 360° around a stationary table to acquire an image. The table then moves forward ("step") for the next scan. Repeatedly it produces discrete image slices.
+
+- Helical CT scan: The X-ray tube rotates continuously, and table moves steadily through the gantry, creating a spiral path of data. Provides continuous volume coverage.
+
+- MDCT scan: Uses multiple rows of detectors to acquire multiple slices per rotation.
+
+- Cardiac scan: A specialized CT scan of the heart, often synchronized with the patient’s ECG.
+
+- CT fluoroscopy: A real-time CT imaging technique useful for interventional procedures.
+
+- **Contrast enhanced CT**: Uses artificially created contrast to help distinguish between structures typically with no visible borders. **CT angiography (CTA)** is a type of contrast enhanced CT. In CTA iodine is administered intravenously to enhance the contrast and “visualize” the borders between the vessels and the vessel wall.
