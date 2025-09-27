@@ -1,908 +1,1427 @@
 export const questionsData = [
   {
-    question:
-      'Which cells in the retina are responsible for vision in dim light?',
-    answers: ['Cone cells', 'Rod cells', 'Ganglion cells', 'Amacrine cells'],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'Where are cone cells primarily concentrated in the retina?',
-    answers: ['Periphery', 'Fovea', 'Optic disc', 'Vitreous humor'],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'Which type of cone detects short wavelengths of light?',
-    answers: ['Protan', 'Deutran', 'Tritan', 'Rod cells'],
-    correctAnswerIndex: 2,
-  },
-  {
-    question: 'What is rhodopsin?',
+    id: 1,
+    question: 'The 4 key features of a stroke are',
     answers: [
-      'A pigment in cone cells',
-      'A light-sensitive pigment in rod cells',
-      'A structural protein in the sclera',
-      'A vitamin essential for retinal development',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'Which layer of the retina contains the axons of ganglion cells?',
-    answers: [
-      'Inner nuclear layer',
-      'Outer nuclear layer',
-      'Retinal nerve fiber layer',
-      'Photoreceptor layer',
+      'Sudden onset, involvement of PNS, lack of rapid resolution, vascular cause',
+      'Sudden onset, focal involvement of CNS, symptoms that last < 1 hour, ischemic cause',
+      'Sudden onset, focal involvement of the CNS, lack of rapid resolution, vascular cause',
+      'Progressive onset, focal involvement of CNS, lack of rapid resolution, vascular cause',
     ],
     correctAnswerIndex: 2,
+    type: 'text',
   },
   {
+    id: 2,
     question:
-      'What is the main function of the retinal pigment epithelium (RPE)?',
-    answers: [
-      'Blood supply to the retina',
-      'Recycling retinal pigments and supporting photoreceptor cells',
-      'Transmitting electrical signals to the brain',
-      'Absorbing excess light entering the eye',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'What is the central depression in the macula called?',
-    answers: ['Perifovea', 'Parafovea', 'Fovea', 'Umbo'],
+      'Which of the following figures show a stroke in evolution (horizontal axis represents time and perpendicular axis the severity of deficit)?',
+    answers: ['figure-a.png', 'figure-b.png', 'figure-c.png', 'figure-d.png'],
     correctAnswerIndex: 2,
+    type: 'image',
   },
   {
+    id: 3,
     question:
-      'Which dietary components are associated with reducing the risk of diabetic retinopathy?',
-    answers: [
-      'Retinol and vitamin D',
-      'Lutein and zeaxanthin',
-      'Omega-3 fatty acids',
-      'Calcium and magnesium',
-    ],
-    correctAnswerIndex: 1,
+      'Which of the following figures show a transient ischemic attack (horizontal axis represents time and perpendicular axis the severity of deficit)?',
+    answers: ['figure-a.png', 'figure-b.png', 'figure-c.png', 'figure-d.png'],
+    correctAnswerIndex: 0,
+    type: 'image',
   },
   {
-    question: 'What embryonic structure gives rise to the retina?',
+    id: 4,
+    question: 'Transient ischemic attacks resolve',
     answers: [
-      'Neural crest',
-      'Optic vesicle',
-      'Mesenchymal tissue',
-      'Optic fissure',
+      'After > 24 hours',
+      'Within 1h',
+      'Leaving persistent focal deficits',
+      'As fast as classic strokes',
     ],
     correctAnswerIndex: 1,
+    type: 'text',
   },
   {
-    question: 'Which artery primarily supplies the inner layers of the retina?',
+    id: 5,
+    question: 'Based on the following images choose the correct answer.',
     answers: [
-      'Central retinal artery',
-      'Long posterior ciliary artery',
-      'Choroid',
-      'Ophthalmic artery',
+      '(A) Left deep ICH on NCCT (B) CTA showing presence of spot sign (C) Follow-up NCCT at 19 hours demonstrating significant hematoma growth with severe midline shift and massive intraventricular extension',
+      '(A) Left deep ICH on NCCT (B) MRI showing absence of spot sign (C) Follow-up NCCT at 6 months demonstrating significant hematoma growth with severe midline shift and massive intraventricular extension',
+      '(A) Left deep ICH on NCCT (B) digital subtraction angiography (DSA) showing presence of spot sign (C) Follow-up NCCT at 19 hours demonstrating significant hematoma growth with severe midline shift and massive intraventricular extension',
+      '(A) Left deep ICH on CTA (B) NCCT showing presence of spot sign (C) Follow-up NCCT at 6 months demonstrating significant hematoma growth with severe midline shift and massive intraventricular extension',
     ],
     correctAnswerIndex: 0,
+    type: 'image',
   },
   {
-    question: 'What causes the blind spot in the visual field?',
+    id: 6,
+    question: 'Circle the correct answer based on the following figure.',
     answers: [
-      'Absence of cones in the periphery',
-      'Absence of photoreceptor cells at the optic disc',
-      'Damage to the retinal nerve fiber layer',
-      'Lack of blood supply to the macula',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question:
-      'Which refractive error increases the risk of retinal detachment?',
-    answers: ['Hyperopia', 'Myopia', 'Astigmatism', 'Presbyopia'],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'What is the primary pathology in retinitis pigmentosa?',
-    answers: [
-      'Loss of ganglion cells',
-      'Gradual loss of rods and cones',
-      'Retinal ischemia due to vascular occlusion',
-      'Overgrowth of retinal blood vessels',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question:
-      'Which layer of the retina contains synapses between bipolar cells and ganglion cells?',
-    answers: [
-      'Outer nuclear layer',
-      'Inner plexiform layer',
-      'Outer plexiform layer',
-      'Inner limiting membrane',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question:
-      'What is the hallmark finding in central retinal artery occlusion (CRAO)?',
-    answers: [
-      'Pigment deposits in the retina',
-      'Cherry-red spot on the macula',
-      'Leakage of fluid from blood vessels',
-      'Detachment of retinal layers',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question:
-      'What is the most common type of age-related macular degeneration?',
-    answers: [
-      'Neovascular AMD',
-      'Wet AMD',
-      'Non-neovascular AMD',
-      'Central serous AMD',
-    ],
-    correctAnswerIndex: 2,
-  },
-  {
-    question: 'What characterizes closed-angle glaucoma?',
-    answers: [
-      'Increased intraocular pressure due to blocked iridocorneal angle',
-      'Degeneration of photoreceptor cells',
-      'Loss of the blood-retinal barrier',
-      'Fluid leakage into the subretinal space',
-    ],
-    correctAnswerIndex: 0,
-  },
-  {
-    question:
-      'What is the most common intraocular complication in patients with HIV?',
-    answers: [
-      'Retinoblastoma',
-      'Cytomegalovirus retinitis',
-      'Diabetic retinopathy',
-      'Retinopathy of prematurity',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question:
-      'What is the leading cause of blindness among adults under 75 in developed countries?',
-    answers: [
-      'Age-related macular degeneration',
-      'Retinitis pigmentosa',
-      'Diabetic retinopathy',
-      'Glaucoma',
-    ],
-    correctAnswerIndex: 2,
-  },
-  {
-    question: 'What is the primary role of the retina in the eye?',
-    answers: [
-      'Adjusting the lens for focusing',
-      'Transmitting and focusing light',
-      'Receiving and processing light signals',
-      'Maintaining intraocular pressure',
-    ],
-    correctAnswerIndex: 2,
-  },
-  {
-    question:
-      'Which structure is responsible for focusing light onto the retina?',
-    answers: ['Cornea', 'Iris', 'Lens', 'Choroid'],
-    correctAnswerIndex: 2,
-  },
-  {
-    question: 'What type of vision are rod cells primarily responsible for?',
-    answers: [
-      'Photopic vision',
-      'Scotopic vision',
-      'Color vision',
-      'Peripheral vision',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question:
-      'What is the approximate number of cone cells in the human retina?',
-    answers: ['6 million', '90 million', '15 to 20 million', '3 million'],
-    correctAnswerIndex: 0,
-  },
-  {
-    question:
-      'What is the term used to describe the absence of photoreceptor cells at the optic nerve site?',
-    answers: ['Fovea', 'Cone mosaic', 'Blind spot', 'Rhodopsin'],
-    correctAnswerIndex: 2,
-  },
-  {
-    question: 'Which photopigment is found in rod cells?',
-    answers: ['Photopsin', 'Rhodopsin', 'Melanopsin', 'Scotopsin'],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'What is the primary cause of glaucoma?',
-    answers: [
-      'Genetic mutations',
-      'Overproduction or impaired drainage of aqueous humor',
-      'Irregular curvature of the cornea',
-      'Inherited autosomal recessive genes',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question:
-      "What type of visual impairment is characterized by 'tunnel vision'?",
-    answers: [
-      'Achromatopsia',
-      'Retinitis pigmentosa',
-      'Diabetic retinopathy',
-      'Glaucoma',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'Which gene is associated with the photopigment rhodopsin?',
-    answers: ['Chromosome 3', 'Chromosome 7', 'X chromosome', 'Chromosome 15'],
-    correctAnswerIndex: 0,
-  },
-  {
-    question: 'Which cells are responsible for color vision?',
-    answers: ['Rods', 'Cones', 'Retinal ganglion cells', 'Bipolar cells'],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'What is the function of melanopsin in the retina?',
-    answers: [
-      'Color vision',
-      'Night vision',
-      'Regulation of circadian rhythms',
-      'Focusing light onto the retina',
-    ],
-    correctAnswerIndex: 2,
-  },
-  {
-    question:
-      'What condition describes the irregular curvature of the cornea or lens?',
-    answers: ['Myopia', 'Hyperopia', 'Astigmatism', 'Glaucoma'],
-    correctAnswerIndex: 2,
-  },
-  {
-    question:
-      'Which type of cone photopigment is sensitive to short wavelengths?',
-    answers: ['L-cones', 'M-cones', 'S-cones', 'Photopsin I'],
-    correctAnswerIndex: 2,
-  },
-  {
-    question: 'What is the primary cause of diabetic retinopathy?',
-    answers: [
-      'Overaccumulation of glucose damaging blood vessels and neurons',
-      'Genetic mutations affecting rod cells',
-      'Buildup of drusen and lipofuscin',
-      'Increased intraocular pressure',
-    ],
-    correctAnswerIndex: 0,
-  },
-  {
-    question:
-      'Which component of the phototransduction pathway inhibits cGMP-dependent cation channels?',
-    answers: [
-      'Rhodopsin kinase',
-      'cGMP phosphodiesterase',
-      'Arrestin',
-      'Guanylyl cyclase',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'Which photopigment gene is located on the X chromosome?',
-    answers: ['S-cones', 'Rhodopsin', 'M-cones and L-cones', 'Melanopsin'],
-    correctAnswerIndex: 2,
-  },
-  {
-    question: 'What is the role of retinal horizontal cells?',
-    answers: [
-      'Transmit signals to the optic nerve',
-      'Inhibit photoreceptor neurotransmitter release',
-      'Absorb light and generate action potentials',
-      'Adjust the lens for focusing',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'What is the absorption maxima for photopsin III?',
-    answers: [
-      'Yellowish-green light',
-      'Green light',
-      'Bluish-violet light',
-      'Red light',
-    ],
-    correctAnswerIndex: 2,
-  },
-  {
-    question:
-      'Which disease is characterized by the degeneration of the macula?',
-    answers: [
-      'Retinitis pigmentosa',
-      'Age-related macular degeneration (AMD)',
-      'Diabetic retinopathy',
-      'Glaucoma',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: "What does 'bleaching' in photoreceptors refer to?",
-    answers: [
-      'The activation of cGMP phosphodiesterase',
-      'The absorption of a photon by a pigment molecule',
-      'The isomerization of retinal to its active form',
-      'The restoration of cGMP levels',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'Which of the following is NOT an application of OCT?',
-    answers: [
-      'Real-time 3D imaging',
-      'Cellular-level spatial resolution',
-      'Long-range sonar detection',
-      'Non-invasive medical diagnostics',
-    ],
-    correctAnswerIndex: 2,
-  },
-  {
-    question: 'What type of waves does OCT use for imaging?',
-    answers: [
-      'Sonic waves',
-      'Electromagnetic waves',
-      'Gamma rays',
-      'Neutron waves',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question:
-      'What is the primary principle behind Optical Coherence Tomography (OCT)?',
-    answers: [
-      'Ultrasound Imaging',
-      'Low Coherence Interferometry',
-      'High Coherence Spectroscopy',
-      'Doppler Effect',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'What is the typical resolution range of OCT?',
-    answers: ['10-100 µm', '1-15 µm', '20-30 µm', '5-50 µm'],
-    correctAnswerIndex: 1,
-  },
-  {
-    question:
-      'What type of scan is created by repeatedly performing A-scans while varying the reference mirror position?',
-    answers: ['C-scan', 'B-scan', 'M-scan', 'D-scan'],
-    correctAnswerIndex: 1,
-  },
-  {
-    question:
-      'Which of the following is the first clinical application of OCT?',
-    answers: [
-      'Cardiovascular diseases',
-      'Eye diseases such as glaucoma',
-      'Skin imaging',
-      'Neurological imaging',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'In an OCT system, what determines the tissue thickness?',
-    answers: [
-      'Light intensity',
-      'Optical delay and speed of light in the tissue',
-      'Wavelength of light',
-      'Beam focusing conditions',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question:
-      'Which technology uses a moving reference mirror for image acquisition?',
-    answers: ['SD-OCT', 'TD-OCT', 'SS-OCT', 'FD-OCT'],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'What is a key disadvantage of TD-OCT compared to FD-OCT?',
-    answers: [
-      'Lower axial resolution',
-      'Slower image acquisition speed',
-      'Limited depth penetration',
-      'Complex system design',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question:
-      'Which OCT technique replaces the detector with a spectrograph for simultaneous frequency analysis?',
-    answers: ['TD-OCT', 'SD-OCT', 'SS-OCT', 'PS-OCT'],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'What is the main advantage of SS-OCT over SD-OCT?',
-    answers: [
-      'Lower cost',
-      'Longer wavelengths for deeper penetration',
-      'Simultaneous frequency detection',
-      'Higher axial resolution',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'What determines the axial resolution of an OCT system?',
-    answers: [
-      'Beam focusing conditions',
-      'Coherence length of the source',
-      'Detector sensitivity',
-      'Light wavelength',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'What is the primary source of noise in OCT systems?',
-    answers: [
-      'Photon noise',
-      'Thermal noise',
-      'Electrical interference',
-      'Acoustic vibrations',
-    ],
-    correctAnswerIndex: 0,
-  },
-  {
-    question:
-      'What type of noise in OCT degrades image quality by reducing contrast?',
-    answers: [
-      'Photon noise',
-      'Speckle noise',
-      'Dark current noise',
-      'Thermal noise',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'What does Doppler OCT measure?',
-    answers: [
-      'Tissue stiffness',
-      'Fluid flow velocity',
-      'Light polarization',
-      'Tissue thickness',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'What is the primary clinical use of PS-OCT?',
-    answers: [
-      'Imaging blood flow',
-      'Analyzing tissue polarization properties',
-      'Measuring tissue stiffness',
-      'Depth penetration imaging',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'Which OCT method uses the Doppler effect for its measurements?',
-    answers: ['PS-OCT', 'Doppler OCT', 'Elastography OCT', 'SS-OCT'],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: "What does the term 'dynamic range' refer to in an OCT system?",
-    answers: [
-      'Sensitivity of the detector',
-      'Ratio of maximum to minimum measurable values',
-      'Range of wavelengths used',
-      'Resolution of the system',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'Which of the following is NOT a source of noise in OCT systems?',
-    answers: [
-      'Photon pressure',
-      'Mechanical vibrations',
-      'Thermal fluctuations',
-      'Optical fiber alignment',
+      '1. Acute, 2. Hyperacute, 3. Subacute, 4. Chronic, 5. Gliosis, 6. Grey matter, 7. White matter',
+      '1. Hyperacute, 2. Acute, 3. Subacute, 4. Gliosis, 5. Chronic, 6. White matter, 7. Grey matter',
+      '1. Acute, 2. Hyperacute, 3. Subacute, 4. Chronic, 5. Gliosis, 6. White matter, 7. Gray matter',
+      '1. Hyperacute, 2. Acute, 3. Subacute, 4. Chronic, 5. Gliosis, 6. Grey matter, 7. White matter',
     ],
     correctAnswerIndex: 3,
+    type: 'image',
   },
   {
-    question: 'What is measured in OCT elastography?',
+    id: 7,
+    question: 'Which one of the following statements is correct?',
     answers: [
-      'Blood flow velocity',
-      'Tissue birefringence',
-      'Mechanical properties of tissue',
-      'Depth penetration of light',
-    ],
-    correctAnswerIndex: 2,
-  },
-  {
-    question: 'What is the unit of dynamic range in OCT systems?',
-    answers: ['Hertz', 'Micrometers', 'Decibels', 'Watts'],
-    correctAnswerIndex: 2,
-  },
-  {
-    question:
-      'Which OCT technique is not yet commercially available due to high costs?',
-    answers: ['TD-OCT', 'SD-OCT', 'SS-OCT', 'Doppler OCT'],
-    correctAnswerIndex: 2,
-  },
-  {
-    question:
-      'When did OCT achieve its first significant application in ophthalmology?',
-    answers: ['1970s', '1980s', '1990s', '2000s'],
-    correctAnswerIndex: 2,
-  },
-  {
-    question:
-      'Which property of OCT allows it to achieve high spatial resolution?',
-    answers: [
-      'Use of non-ionizing radiation',
-      'Low coherence interference',
-      'High-frequency X-rays',
-      'Magnetic resonance principles',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'What is the speed of electromagnetic waves in a vacuum?',
-    answers: ['3 x 10^6 m/s', '3 x 10^8 m/s', '3 x 10^12 m/s', '3 x 10^14 m/s'],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'What phenomenon occurs when two electromagnetic waves interact?',
-    answers: ['Diffraction', 'Interference', 'Refraction', 'Dispersion'],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'What determines the refractive index of a material?',
-    answers: [
-      'Wavelength and amplitude',
-      'Speed of light in vacuum and in the medium',
-      'Frequency and phase',
-      'Absorption and scattering',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question:
-      'What is the formula relating wavelength (λ) and frequency (f) in electromagnetic waves?',
-    answers: ['c = λ * f', 'c = λ / f', 'c = f / λ', 'c = λ^2 * f'],
-    correctAnswerIndex: 0,
-  },
-  {
-    question:
-      'Which tissue property most significantly affects OCT imaging depth?',
-    answers: [
-      'Absorption coefficient',
-      'Refractive index',
-      'Magnetic properties',
-      'Electrical conductivity',
-    ],
-    correctAnswerIndex: 0,
-  },
-  {
-    question: 'What is the main function of an interferometer in OCT?',
-    answers: [
-      'Generate electromagnetic waves',
-      'Measure the intensity of backscattered radiation',
-      'Produce ultrasound waves',
-      'Detect gamma radiation',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question:
-      "What is the spectral range referred to as the 'therapeutic window' in OCT?",
-    answers: [
-      '250 nm - 600 nm',
-      '600 nm - 1200 nm',
-      '1200 nm - 2000 nm',
-      '2000 nm - 3000 nm',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'Which scattering type dominates in dense, organized media?',
-    answers: [
-      'Rayleigh scattering',
-      'Mie scattering',
-      'Diffuse scattering',
-      'Inelastic scattering',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'What is the primary advantage of OCT compared to ultrasound?',
-    answers: [
-      'Use of sonic waves',
-      'Higher imaging depth',
-      'Real-time 3D imaging',
-      'Use of ionizing radiation',
-    ],
-    correctAnswerIndex: 2,
-  },
-  {
-    question:
-      'What happens to light when it encounters a discontinuity in the medium?',
-    answers: [
-      'It stops propagating',
-      'It is completely absorbed',
-      'It is reflected and refracted',
-      'It changes its frequency',
-    ],
-    correctAnswerIndex: 2,
-  },
-  {
-    question: 'Which law explains the refraction of light between two media?',
-    answers: [
-      'Lambert-Beer law',
-      "Snell's law",
-      "Planck's law",
-      'Doppler effect',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question:
-      'What type of scattering is characterized by photons interacting with atoms smaller than the wavelength of light?',
-    answers: [
-      'Mie scattering',
-      'Rayleigh scattering',
-      'Inelastic scattering',
-      'Forward scattering',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'Which of the following factors does NOT affect OCT imaging?',
-    answers: [
-      'Wavelength of the source',
-      'Magnetic properties of tissue',
-      'Composition of the sample',
-      'Refractive index mismatch',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'What is the significance of the near-infrared window in OCT?',
-    answers: [
-      'It reduces the cost of imaging',
-      'It allows for better penetration depth',
-      'It enhances magnetic field interactions',
-      'It avoids diffraction effects',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question:
-      'What is the purpose of using different wavelengths in OCT imaging?',
-    answers: [
-      'To increase imaging speed',
-      'To improve image resolution',
-      'To optimize imaging for different tissue types',
-      'To reduce interference patterns',
-    ],
-    correctAnswerIndex: 2,
-  },
-  {
-    question: 'What is the primary advantage of OCT in medical imaging?',
-    answers: [
-      'It uses X-rays',
-      'It is non-invasive',
-      'It requires anesthesia',
-      'It is expensive',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'What type of data does OCT provide?',
-    answers: [
-      'Quantitative only',
-      'Morphological only',
-      'Both morphological and quantitative',
-      'Neither morphological nor quantitative',
-    ],
-    correctAnswerIndex: 2,
-  },
-  {
-    question:
-      'What is the typical penetration depth of OCT in gastrointestinal tissues?',
-    answers: ['0.5-1.0 mm', '1.2-1.6 mm', '2.0-2.5 mm', '3.0-4.0 mm'],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'In which medical field is OCT most widely used?',
-    answers: ['Dermatology', 'Cardiology', 'Ophthalmology', 'Dentistry'],
-    correctAnswerIndex: 2,
-  },
-  {
-    question:
-      'What does high reflectivity in an OCT image indicate in retinal tissue?',
-    answers: [
-      'Healthy tissue',
-      'Scar tissue or atrophy',
-      'Fluid accumulation',
-      'Transparent areas',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'What can OCT detect in the anterior segment of the eye?',
-    answers: [
-      'Blood clots',
-      'Corneal infections',
-      'Iris volume and thickness',
-      'Tumors',
-    ],
-    correctAnswerIndex: 2,
-  },
-  {
-    question: 'What feature is observed in OCT images of retinal detachment?',
-    answers: [
-      'Increased reflectivity',
-      'Optically empty spaces',
-      'Irregular vessel walls',
-      'Rounded hypo reflective areas',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'Which type of eye surgery uses OCT for precision?',
-    answers: [
-      'Cataract surgery',
-      'PRK and LASIK',
-      'Vitrectomy',
-      'Glaucoma surgery',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'What distinguishes red blood clots in OCT imaging?',
-    answers: [
-      'High reflectivity',
-      'Low reflectivity',
-      'Strong backscatter',
-      'Transparent appearance',
-    ],
-    correctAnswerIndex: 2,
-  },
-  {
-    question:
-      'What is a characteristic of fibrous lesions in OCT cardiovascular imaging?',
-    answers: [
-      'Hyporeflective areas',
-      'High backscatter and homogeneity',
-      'Transparent appearance',
-      'Irregular shapes',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'How does OCT help in assessing atherosclerosis?',
-    answers: [
-      'By measuring nerve thickness',
-      'By analyzing vessel wall damage',
-      'By detecting retinal detachment',
-      'By measuring tumor sizes',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question:
-      'What morphological change is observed in malignant melanoma using OCT?',
-    answers: [
-      'Visible basement membrane',
-      'Loss of basement membrane zone',
-      'High reflectivity of dermis',
-      'Uniform epithelial stratification',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question:
-      'Which cancer shows hypo-reflective rounded areas in OCT imaging?',
-    answers: [
-      'Lung cancer',
-      'Basal cell carcinoma',
-      'Oral cancer',
-      'Prostate cancer',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'How does OCT identify squamous cell carcinoma in lung cancer?',
-    answers: [
-      'Dark, spherical structures',
-      'Bright, irregular signals',
-      'Transparent masses',
-      'Uniform cell layers',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'What feature is seen in OCT imaging of breast cancer?',
-    answers: [
-      'Homogeneous cell distribution',
-      'Loss of normal structures and asteroid schematic lesions',
-      'Transparent areas surrounded by normal tissue',
-      'Regular fibrous trabeculae',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'How are cancerous lymph nodes identified in OCT imaging?',
-    answers: [
-      'Uniform backscatter',
-      'High heterogeneity with hole-like structures',
-      'Low reflectivity areas',
-      'Smooth, rounded structures',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question:
-      'What is the main diagnostic limitation of OCT in cancer imaging?',
-    answers: [
-      'Low resolution',
-      'Inability to distinguish benign from malignant tumors',
-      'High cost',
-      'Requirement for anaesthesia',
-    ],
-    correctAnswerIndex: 1,
-  },
-  {
-    question: 'What application does PS-OCT have in dentistry?',
-    answers: [
-      'Imaging dental tubules',
-      'Diagnosing gingivitis',
-      'Measuring bone density',
-      'Visualizing dental caries',
+      'Hypertension is the most important non-modifiable factor related to higher risk of ICH.',
+      'The Apolipoprotein E (APOE) gene is strongly associated with decreased risk of ICH.',
+      'The gold standard for ICH diagnosis in the emergency department is MRI.',
+      'The gold standard for ICH diagnosis in the emergency department is NCCT.',
     ],
     correctAnswerIndex: 3,
+    type: 'text',
   },
   {
-    question:
-      'Which OCT application is particularly useful in detecting pulmonary hypertension?',
+    id: 8,
+    question: 'Which one of the following statements is correct?',
     answers: [
-      'Measuring iris thickness',
-      'Identifying fibrous lesions in vessels',
-      'Imaging cartilage degeneration',
-      'Detecting intraretinal cysts',
+      'The spot sign in an area in a NCCT image that shows active contrast extravasation and indicates active bleeding into the hematoma.',
+      'The spot sign is a strong predictor of hematoma expansion and is usually visible with a CTA within the first 3 hours of symptoms onset.',
+      'CTA serves as an excellent initial non-invasive screening technique, but digital subtraction angiography (DSA) remains the diagnostic gold standard because the patient is not exposed to ionizing radiation',
+      'The spot sign is associated with decreased risk of intraoperative active bleeding and may help determine which patients are likely to benefit from surgical intervention.',
     ],
     correctAnswerIndex: 1,
+    type: 'text',
   },
   {
-    question: 'What is a primary disadvantage of OCT mentioned in the text?',
+    id: 9,
+    question: 'ICH volume',
     answers: [
-      'Use of ionizing radiation',
-      'Dependence on high-quality sources',
-      'Limited imaging resolution',
-      'Invasive procedure',
+      'can be rapidly estimated in the ED with the ABC/2 technique and is a strong predictor of hematoma expansion.',
+      'is expressed in Hounsfield units',
+      'is an area of contrast extravasation because of active bleeding',
+      'is estimated by selecting the axial CTA image with the largest area of hemorrhage.',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 10,
+    question: 'When estimating the hematoma volume with the ABC/2 technique:',
+    answers: [
+      'We select the axial CT image with the largest area of hemorrhage. A is the largest diameter on this slice and B the perpendicular the middle of A. C is the slice thickness multiplied by the number of slices in which the hematoma is visible.',
+      'We select the axial CT image with the smallest area of hemorrhage. A is the largest diameter on this slice and B the perpendicular in the middle A. C is the slice thickness multiplied by the number of slices in which the hematoma is visible.',
+      'We select the axial CT image with the largest area of hemorrhage. A is the largest diameter on this slice and B the largest perpendicular to A. C is the slice diameter multiplied by the number of slices in which the hematoma is visible.',
+      'We select the axial CT image with the largest area of hemorrhage. A is the largest diameter on this slice and B the largest perpendicular to A. C is the slice thickness multiplied by the number of slices in which the hematoma is visible.',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 11,
+    question:
+      'Which one of the following statements about the hematoma attenuation over time is correct?',
+    answers: [
+      'Hours after onset the hematoma is iso-attenuating with gray matter (hyperacute phase).',
+      'Over the next days after onset, the attenuation progressively increases to hyper-attenuating with the gray or white matter (subacute phase).',
+      'Typically within weeks of onset attenuation decreases even more to become hypoattenuating (chronic phase).',
+      'Ultimately, the hematoma is absorbed, typically leaving behind no lesion.',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 12,
+    question: 'The swirl sign is:',
+    answers: [
+      'The presence of areas of hypo-attenuation or iso-attenuation within the hyper-attenuated ICH on NCCT images.',
+      'The presence of areas of hyper-attenuation or iso-attenuation within the hypo-attenuated ICH on NCCT images',
+      'The presence of areas of hypo-attenuation or iso-attenuation within the hyper-attenuated ICH on CTA images.',
+      'The presence of areas of hyper-attenuation or iso-attenuation within the hypo-attenuated ICH on CTA images',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 13,
+    question:
+      'Which of the following statements about the black hole sign is correct?',
+    answers: [
+      'It is a round or oval shaped area of hype-rattenuation within the hypoattenuating hematoma, enclosed and surrounded by the hematoma with no connection to the adjacent parenchyma.',
+      'It is a round or oval shaped area of hypo-attenuation within the hyper-atenuating hematoma, enclosed and surrounded by the hematoma with no connection to the adjacent parenchyma.',
+      'The density difference between the hypo and hyper-attenuated area typically is less than 28 Hounsfield units.',
+      'The density difference between the iso and hyper-attenuated area typically is at least 28 Hounsfield units.',
     ],
     correctAnswerIndex: 1,
+    type: 'text',
   },
   {
-    question:
-      'Optical Coherence Tomography (OCT) is a preferred diagnostic tool for detecting which of the following retinal conditions?',
+    id: 14,
+    question: 'The black hole sign:',
     answers: [
-      'Diabetic retinopathy',
-      'Retinitis pigmentosa',
-      'Macular edema',
-      'Conjunctivitis',
+      'a more sensitive than specific predictor of hematoma expansion.',
+      'is characterized by the presence of mixed density and attenuation within the same hematoma.',
+      'is characterized by homogenous density and attenuation within the hematoma.',
+      'reveals active bleeding in the CTA image.',
     ],
-    correctAnswerIndex: 2,
+    correctAnswerIndex: 1,
+    type: 'text',
   },
   {
-    question:
-      'In the diagnosis of diabetic macular edema (DME), OCT is used primarily to assess:',
+    id: 15,
+    question: 'The Blend sign:',
     answers: [
-      'Retinal blood vessel leakage',
-      'The presence of retinal hemorrhages',
-      'Macular thickness and fluid accumulation',
-      'Vitreous detachment',
+      'is a predictor of ICH volume.',
+      'is hypo-attenuated area next to the hematoma.',
+      'which is a both hyper-attenuated and hypo-attenuated area within the hemorrhage but in a mixed way, without delineable boundaries.',
+      'has very low specificity as a predictor of hematoma expansion.',
     ],
     correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 16,
+    question:
+      'Which one of the following statements about the island sign are correct?',
+    answers: [
+      'It is associated with multiple bleeding sources, possibly because of shear force or the initial hematoma that causes injuries to the arterioles of the area.',
+      'It is the hematoma expansion predictor with the highest sensitivity.',
+      'It is three or more small bubble-like or sprout-like lobulated hematomas scattered and all separate from the main hematoma.',
+      'It is the most specific sign of ICH in the CTA image.',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 17,
+    question: 'The satellite sign:',
+    answers: [
+      'is any large hematoma presented sole with 1–20 mm distance from the main hematoma.',
+      'is any small hemorrhage presented within the main hematoma.',
+      'is any small hemorrhage presented sole with 1–20 mm distance from the main hematoma.',
+      'is the strongest predictor of outcome and 30-day mortality.',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 18,
+    question: 'CT angiography (CTA):',
+    answers: [
+      'is widely accessible and serves as an excellent initial invasive screening technique.',
+      'is always essential for endovascular treatment of cerebral vascular abnormalities following the diagnosis of the stroke.',
+      'is used only for the diagnosis of ischemic strokes.',
+      'is widely accessible and serves as an excellent initial non-invasive screening technique.',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 19,
+    question: 'The primary limitations of CTA are',
+    answers: [
+      'its cost and radiation exposure',
+      'it cannot be used for an initial evaluation',
+      'it is invasive.',
+      'patients with a pacemaker cannot undergo CTA',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 20,
+    question: 'Concerning ICH shape and density:',
+    answers: [
+      'Heterogenous/ irregular hematomas are associated with decreased risk of expansion during the first 24 h of onset.',
+      'Heterogenous/ irregular hematomas are associated with increased risk of expansion during the first 24 h of onset.',
+      'Homogenous/regular-shaped hematomas are associated with more severe perihematomal edema.',
+      'Homogenous/regular hematomas do not need to be treated.',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 21,
+    question: 'Perihematomal edema (PHE):',
+    answers: [
+      'increases slowly within the first 24 hours and continues its progressive raise for the first 3 days after the incident.',
+      'reaches its peak at days 30 days and then for the next few days stays gradually elevated.',
+      'reaches its peak at days 4-5 and then for the next few days gradually decreases.',
+      'increases rapidly within the first 24 hours and continues its rapid raise for the first 3 days after the incident.',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 22,
+    question: 'Which one of the following statements is correct?',
+    answers: [
+      'Hematoma expansion is to be less likely to be present in deep ICH compared to lobar ICH.',
+      'Lobar hemorrhages are usually caused by CAA and are characterized by subarachnoid extension and finger-like projections on NCCT images.',
+      'Cerebellum hemorrhage typically causes seizures.',
+      'Lobar hematoma causes pinpoint pupils.',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 23,
+    question:
+      'Which one of the following statements about hematoma expansion is correct?',
+    answers: [
+      'It does not cause any symptoms.',
+      'It stops 2 hours after the onset.',
+      'Early expansion is modifiable predictor of poor outcome',
+      'No follow–up NCCT is needed.',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 24,
+    question: 'Intraventricular hemorrhage:',
+    answers: [
+      'is not common in ICH cases',
+      'may obstruct the flow of cerebrospinal fluid',
+      'does not cause loss of consciousness.',
+      'is caused by hydrocephalus.',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 25,
+    question: 'Edema extension distance',
+    answers: [
+      'is the distance between the center of the hematoma and the furthest edema border.',
+      'is the mean distance between the hematoma border and the center of the edema.',
+      'is the mean distance between the hematoma border and the outer border of the edema.',
+      'is the distance between vasogenic and secondary cytotoxic edema.',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 26,
+    question: 'Based on the images below, choose the correct answer:',
+    answers: [
+      '1. Black hole sign, 2. Island sign, 3. Spot sign, 4. Blend sign, 5. Swirl sign, 6. Satellite sign',
+      '1. Black hole sign, 2. Satellite sign, 3. Spot sign, 4. Blend sign, 5. Swirl sign, 6. Island sign',
+      '1. Blend hole sign, 2. Island sign, 3. Spot sign, 4. Black hole sign, 5. Swirl sign, 6. Satellite sign',
+      '1. Black hole sign, 2. Island sign, 3. Spot sign, 4. Swirl sign, 5. Blend sign, 6. Satellite sign',
+    ],
+    correctAnswerIndex: 0,
+    type: 'image',
+  },
+  {
+    id: 27,
+    question: 'Mild ischemia',
+    answers: [
+      'can create and determine specific patterns of cell death of red blood cells.',
+      'leads to selective neuronal vulnerability when rapid restoration of blood flow occurs.',
+      'accounts for about 87% of all strokes.',
+      'does not need to be treated.',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 28,
+    question:
+      'Which one of the following statements about brain ischemia is correct?',
+    answers: [
+      'The infraction area within the ischemic core is typically supplied by less than 20% of the normal flow.',
+      'When blood flow to the brain is interrupted due to embolism, coagulation cascade causes oxygen deprivation to glia.',
+      'Complete permanent ischemia without reperfusion affects only the neurons.',
+      'The infraction area within the ischemic core is typically supplied with glycose but not oxygen.',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 29,
+    question: 'Complete permanent ischemia:',
+    answers: [
+      'affects all types of brain cells by causing pannecrosis and leaves cavitary lesions',
+      'usually happens after quick reperfusion',
+      'is revealed by the penumbra',
+      'affects only the neurons',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 30,
+    question: 'Edema after an ischemic stroke',
+    answers: [
+      'is maximal 10-12 days after the onset',
+      'is a result of trauma',
+      'begins to form 2-3 days after onset',
+      'may lead to herniation and death',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 31,
+    question: 'Energy failure of the cells during an ischemic stroke:',
+    answers: [
+      'helps the infract area to lower the energy consumption',
+      'is a result of glycose and oxygen deprivation',
+      'can be totally reversed with the help of glycolysis',
+      'is a result of reperfusion',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 32,
+    question:
+      'Which one of the following statements about the ischemic core and the penumbra is correct?',
+    answers: [
+      'Energy failure which is more intense in the ischemic core compared to the surrounding penumbra.',
+      'Death of penumbral tissue is associated with a better clinical outcome.',
+      'Cell death is less intense and fast in the infarct core (apoptosis) compared to the penumbra (necrosis) and during reperfusion.',
+      'Penumbra is the area of edema.',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 33,
+    question:
+      'Which of the following complications is most closely associated with a high Fisher or modified Fischer score in Subarachnoid Hemorrhage?',
+    answers: [
+      'Seizure',
+      'Cerebral vasospasm leading to delayed ischemia',
+      'Cardiac arrhythmia',
+      'Cerebral herniation',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 34,
+    question:
+      'According to the modified Fischer scale, which grade corresponds to thick Subarachnoid Hemorrhage with intraventricular hemorrhage in both lateral ventricles?',
+    answers: ['Grade 2', 'Grade 3', 'Grade 4', 'Grade 1'],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 35,
+    question:
+      'Which of the following statements about middle cerebral artery (MCA) infarction is correct?',
+    answers: [
+      'Superior Division Infarction is characterized by homonymous hemianopia.',
+      'Inferior Division Infarction produces contralateral homonymous hemianopia.',
+      'Bifurcation or Trifurcation Occlusion combines features of both anterior and posterior infarcts.',
+      'MCA Stem Occlusion produces a clinical picture similar to superior division infarction.',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 36,
+    question: 'Posterior cerebral artery:',
+    answers: [
+      'branches from the carotid artery',
+      'branches from the basilar artery',
+      'supplies cerebellum',
+      'infarction causes alexia with agraphia',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 37,
+    question: 'In cases where acute ischemic stroke is suspected',
+    answers: [
+      'all patients should undergo emergency brain imaging upon arrival at the hospital after starting thrombolysis.',
+      'the imaging process must occur swiftly, aiming for a door-to-imaging duration under 20 minutes and imaging interpretation within 45 minutes.',
+      'the imaging process must occur swiftly, aiming for a door-to-imaging duration and imaging interpretation within 20 minutes.',
+      'CT is more suitable compared to MRI for demonstrating early ischemic infarcts within the first 6 hours.',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 38,
+    question: 'The effectiveness of IV alteplase',
+    answers: [
+      'is not time dependent.',
+      "is lower when used earlier than 6 hours from the symptom's onset.",
+      'results in greater relative advantages with earlier use within the approved therapeutic window.',
+      'depends on the type of brain imaging method that is used to diagnose the acute ischemic stroke.',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 39,
+    question: 'Which one of the following statements is correct?',
+    answers: [
+      'Shortening the duration from emergency department arrival to initial neuroimaging can contribute significantly to earlier treatment administration.',
+      'Average or median door-to-imaging times of 20 minutes or less are not attainable in any type of hospital environment.',
+      'Access to mechanical treatment for eligible patients is not time dependent.',
+      'Mechanical thrombectomy for eligible patients can be performed without undergoing any prior brain imaging.',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 40,
+    question:
+      'Which one of the following statements is correct about the diagnosis of acute ischemic stroke?',
+    answers: [
+      'NCCT as well as MRI are effective to exclude ICH before IV alteplase administration.',
+      'Guidelines support that an NCCT should be performed after MRI.',
+      'CTA is used to exclude ICH.',
+      'CTP is used to exclude ICH.',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 41,
+    question:
+      'Which one of the following statements is correct about the diagnosis of acute ischemic stroke (AIS)?',
+    answers: [
+      'MR perfusion is never recommended for the diagnosis of AIS',
+      'CTA with CTP is useful for selecting candidates for alteplase administration between 6 and 24 hours after last known well.',
+      'In cases where the patient awake with stroke or time of onset cannot be accurately defined, MRI helps to choose those who can benefit from IV alteplase.',
+      'In cases where the patient awake with stroke or time of onset cannot be accurately defined, MRI helps to choose those who can benefit from mechanical thrombectomy.',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 42,
+    question:
+      'Which of the following statements about acute ischemic stroke (AIS) is false?',
+    answers: [
+      'CTA with CTP is useful for selecting candidates for mechanical thrombectomy between 6 and 24 hours after last known well.',
+      'For patients who otherwise meet criteria for endovascular therapy (EVT) a CTA is recommended during the initial evaluation but even if this delays IV thrombolysis if indicated.',
+      'NCCT as well as MRI are effective to exclude ICH before IV alteplase administration.',
+      'NCCT is sufficient neuroimaging for decisions about IV alteplase in most patients.',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 43,
+    question:
+      'Which of the following statements about acute ischemic stroke (AIS) is false?',
+    answers: [
+      'The effectiveness of IV alteplase is time dependent, with earlier use within the approved therapeutic window resulting in greater relative advantages.',
+      'To maximize access to mechanical thrombectomy for eligible patients arriving within the 6- to 24-hour timeframe, prompt assessment and intervention remain essential.',
+      'Shortening the duration from emergency department arrival to initial neuroimaging can contribute significantly to earlier treatment administration.',
+      'NCCT as well as MRI are not effective to exclude ICH before IV alteplase administration.',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 44,
+    question:
+      'Which of the following statements about acute ischemic stroke (AIS) is false?',
+    answers: [
+      'Administration of thrombolytic should wait to perform an MRI in order to exclude cerebral microbleeds (CMBs).',
+      'In patients who awake with stroke symptoms an MRI can provide needed information for selecting the patients who can benefit from IV thrombolysis.',
+      'The risk of contrast-induced nephropathy secondary to CTA imaging for patients with normal renal function is not high.',
+      'In addition to the intracranial circulation, imaging of the extracranial carotid and vertebral arteries is helpful.',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 45,
+    question:
+      'Which of the following statements about eligibility for mechanical thrombectomy is false?',
+    answers: [
+      'If there is no renal impairment CTA can be performed before obtaining a serum creatinine concentration.',
+      'The risk of contrast-induced nephropathy secondary to CTA imaging for patients with normal renal function is high.',
+      'In cases of large vessel occlusion (LVO) with no noninvasive vessel imaging during the initial evaluation, noninvasive vessel imaging should be performed as quickly as possible even during alteplase infusion.',
+      'In LVO cases, CTA has greater accuracy than MRA.',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 46,
+    question: 'Which of the following statements about AIS is false?',
+    answers: [
+      'Identifying the collateral flow status of the patient is also very important to make decisions about the treatment and the potential thrombectomy eligibility.',
+      'Multiphase CTA can be useful to show collateral circulation.',
+      'NCCT can be useful to show collateral circulation.',
+      'advanced imaging should not delay door–to–groin puncture times.',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 47,
+    question: 'Which of the following in not an early CT sign of ischemia?',
+    answers: [
+      'hypoattenuating brain tissue',
+      'obscuration of lentiform nucleus',
+      'dense MCA sign',
+      'swirl sign',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 48,
+    question: 'Which of the following in not an early CT sign of ischemia?',
+    answers: [
+      'sulcal effacement',
+      'insular ribbon sign',
+      'satellite sign',
+      'dense MCA sign',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 49,
+    question: 'Hypoattenuating brain tissue in AIS:',
+    answers: [
+      'is the result of cytotoxic edema that occurs due to ion pumps failure.',
+      'is the result of hemorrhage',
+      'is a sign of reversible brain damage.',
+      'is a good sign with better potentials for a favorable outcome.',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 50,
+    question: 'Which of the following statements is correct?',
+    answers: [
+      'An increase of brain water content by 2,5% will result in a CT attenuation decrease of 1 HU.',
+      'An increase of brain water content by 1% will result in a CT attenuation decrease of 2.5 HU.',
+      'A decrease of brain water content by 1% will result in a CT attenuation decrease of 2.5 HU.',
+      'An increase of brain water content by 1% will result in a CT attenuation increase of 2.5 HU.',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 51,
+    question:
+      'Which of the following statements about hypoattenuating brain tissue in AIS is false?',
+    answers: [
+      'Early detection of hypoattenuation in the first six hours is usually followed by larger infarct volumes.',
+      'Early detection of hypoattenuation in the first six hours is usually followed by more severe symptoms.',
+      'Early detection of hypoattenuation in the first six hours is usually followed by higher risk of hemorrhage.',
+      'Early detection of hypoattenuation in the first six hours is usually followed by lower risk of hemorrhage.',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 52,
+    question: 'Obscuration of the lentiform nucleus:',
+    answers: [
+      'is one of the earliest CTA signs seen in MCA infraction.',
+      'is one of the earliest CT signs seen in MCA infraction.',
+      'is an early MRI sign of ischemia.',
+      'is a late CT sign of ischemia.',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 53,
+    question: 'Insular Ribbon sign',
+    answers: [
+      'refers to hypodensity and swelling of the insular cortex.',
+      'is e result of aneurysm rupture.',
+      'is a result of rich collateral flow.',
+      'is an early CTP sign.',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 54,
+    question: 'Insular Ribbon sign',
+    answers: [
+      'refers to hyperdensity and swelling of the insular cortex.',
+      'is an early CTA sign.',
+      'is a result of rich collateral flow.',
+      'can easily be confused with herpes encephalitis.',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 55,
+    question: 'Dense MCA sign',
+    answers: [
+      'is a result of occlusion in the MCA.',
+      'is a result of aneurysm of MCA.',
+      'is a result of collateral flow.',
+      'is a late ischemia CT sign.',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 56,
+    question: 'Which of the following statements about AIS is false?',
+    answers: [
+      'Over the course of minutes to hours, the ischemia-infarction process in the brain leads to progressively increasing edema.',
+      'CT systems are standardized based on the attenuation coefficient of water, enabling them to detect even minimal increases in brain water content as reductions in tissue attenuation, expressed in Hounsfield units (HU).',
+      'In the earliest stages of ischemia (within minutes after stroke onset), cytotoxic edema develops and water gain at this point affects CT attenuation.',
+      'Within hours, more discernible changes appear, such as brain tissue swelling or parenchymal hypoattenuation as a result of ongoing ionic edema and a net increase in tissue water content.',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 57,
+    question: 'The infarct core in the NCCT:',
+    answers: [
+      'presents with isolated swelling',
+      'is typically bigger than the penumbra',
+      'can be defined by the ratio penumbra attenuation/normal attenuation',
+      'when identified helps to assess brain tissue viability.',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 58,
+    question: 'The infarct core in the NCCT:',
+    answers: [
+      'presents with isolated swelling',
+      'represents irreversibly damaged tissue',
+      'can be defined by the ratio penumbra attenuation/normal attenuation',
+      'represents tissue at-risk but potentially salvageable',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 59,
+    question: 'Penumbra in the NCCT',
+    answers: [
+      'represents irreversibly damaged tissue',
+      'represents tissue at-risk but potentially salvageable',
+      'is characterized by hyperattenuation',
+      'is a result of hemorrhage',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 60,
+    question: 'NCCT imaging of AIS has the following advantages:',
+    answers: [
+      'widely available, cost-effective, fast image acquisition',
+      'widely available, cost-effective, high sensitivity for hyperacute and acute ischemic stroke',
+      'widely available, no radiation exposure, fast image acquisition',
+      'no radiation exposure, cost-effective, high sensitivity for hyperacute and acute ischemic stroke',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 61,
+    question: 'NCCT imaging of AIS has the following disadvantages:',
+    answers: [
+      'ionizing radiation, limitations for posterior circulation and small lesions, use of contras agent',
+      'ionizing radiation, limitations for posterior circulation and small lesions as well as hyperacute and acute ischemic stroke',
+      'ionizing radiation, flow dependent images may be inaccurate, use of contrast agent',
+      'high cost, limitations in availability',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 62,
+    question: 'CTA imaging of AIS has the following advantages:',
+    answers: [
+      'locates and shows the dimensions of the occlusion in order to plan reperfusion treatment, presents the true anatomy of the vessel lumen',
+      'no contrast agent contraindications, wide availability',
+      'distinguishes infarct core and penumbra accurately, low radiation exposure',
+      'presents the true anatomy of the vessel lumen, no contrast agent contraindications',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 63,
+    question: 'CTA imaging of AIS has the following disadvantages:',
+    answers: [
+      'radiation exposure, does not present the true anatomy of the vessel lumen',
+      'does not present the true anatomy of the vessel lumen, contrast agent contraindications',
+      'limitations for posterior circulation and small lesions, slower acquisition of the results than MRA',
+      'radiation exposure, contrast agent contraindications',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 64,
+    question: 'CTP imaging for AIS:',
+    answers: [
+      'has higher cost than MRP',
+      'distinguishes infarct core and penumbra accurately and helps to select patients for reperfusion treatment',
+      'is better than CTA in terms of availability',
+      'uses no ionizing radiation and has better sensitivity than CT',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 65,
+    question: 'MRI imaging for AIS has the following advantages:',
+    answers: [
+      'no radiation exposure, fast image acquisition',
+      'low cost, better sensitivity than CT, better detection of small lesions than CT',
+      'no radiation exposure, better sensitivity than CT, better detection of small lesions than CT',
+      'low cost, fast image acquisition',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 66,
+    question: 'MRI imaging for AIS has the following disadvantages:',
+    answers: [
+      'radiation exposure, higher cost',
+      'slower than CT, higher cost, limited availability',
+      'limitations in detection of small lesions compared to CT, slower than CT',
+      'radiation exposure, limitations in detection of small lesions compared to CT',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 67,
+    question: 'MRA imaging for AIS:',
+    answers: [
+      'locates the source of occlusion, assesses brain tissue perfusion level',
+      'typically does not need contrast agent, gives flow independent images',
+      'locates the source of occlusion, does not need contrast agent',
+      'may give inaccurate flow dependent images, assesses brain tissue perfusion level',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 68,
+    question: 'MRP imaging for AIS:',
+    answers: [
+      'is a better initial choice for the ED evaluation compared to NCCT',
+      'is widely available, low cost and assesses brain tissue perfusion level',
+      'is better than CTA because no contrast agent is needed',
+      'assesses brain tissue perfusion level but has higher cost, limited availability, use of contrast agent',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 69,
+    question: 'Concerning loss of basal ganglia sign:',
+    answers: [
+      'It is defined as decreased attenuation involving the lentiform nucleus and loss of the accurate delineation of this area.',
+      'It is typically not present before 6 hours of stroke onset',
+      'It is seen in M1 segment of MCA occlusion (this segment of MCA supplies the lentiform nucleus with collateral flow from cortical anastomoses)',
+      'It is defined as increased attenuation involving the lentiform nucleus and loss of the accurate delineation of this area.',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 70,
+    question: 'Concerning the loss of basal ganglia sign:',
+    answers: [
+      'It is defined as increased attenuation involving the lentiform nucleus and loss of the accurate delineation of this area.',
+      'It is one of the earliest (in some cases it can be seen even 1 hour after clinical onset) and most frequent signs seen in MCA infarction.',
+      'It is present when M1 segment occlusion of PCA occurs or in more distal part of PCA.',
+      'Typically it is present to both the healthy and ischemic hemisphere.',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 71,
+    question: 'The arrow in the NCCT below shows:',
+    image: 'ncct-basal-ganglia.png', // Place the image in your public folder and update the path if needed
+    answers: [
+      'loss of right basal ganglia 2 hours (a) and one day (b) after AIS onset.',
+      'MCA dot sign loss of right basal ganglia.',
+      'Insular ribbon ASPECTS region.',
+      'Contrast agent leak in basal ganglia.',
+    ],
+    correctAnswerIndex: 0,
+    type: 'image',
+  },
+  {
+    id: 72,
+    question: 'The arrow in the NCCT below shows:',
+    image: 'ncct-insular-ribbon.png', // Place the image in your public folder and update the path if needed
+    answers: [
+      'MCA dot sign',
+      'Insular ribbon sign',
+      'Hematoma',
+      'Dense MCA sign',
+    ],
+    correctAnswerIndex: 1,
+    type: 'image',
+  },
+  {
+    id: 73,
+    question: 'Insular ribbon sign :',
+    answers: [
+      'is defined as decreased attenuation involving the lentiform nucleus and loss of the accurate delineation of this area in the NCCT.',
+      'is defined as decreased precision in delineation of gray-white matter interface at lateral margin of insula in CTP and refers to hypodensity and swelling of the insular cortex, a region sensitive to ischemia due to its poor collateral flow.',
+      'is defined as decreased precision in delineation of gray-white matter interface at lateral margin of insula in NCCT and refers to hypodensity and swelling of the insular cortex, a region sensitive to ischemia due to its poor collateral flow.',
+      'is an early and very common CT-sign of infarction in the territory of the PCA and needs careful evaluation.',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 74,
+    question:
+      'Which of the following statements about dense MCA sign is false?',
+    answers: [
+      'It is a result of occlusion in the MCA.',
+      'It is seen on NCCT and CTA.',
+      'It is has low specificity and positive predictive value in indicating thromboembolic occlusion of the MCA.',
+      'It correlates with severe neurological impairment, widespread brain injury, and unfavorable clinical prognosis.',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 75,
+    question:
+      'Which of the following statements about dense MCA sign is false?',
+    answers: [
+      'It is seen as hyperattenuating MCA vessel with attenuation higher than that in any other visualized artery or vein.',
+      'Typically MCA attenuation is abnormal presenting as more than 43HU and the ratio dense MCA/normal appearing vessel is higher than 1.2 in AIS.',
+      'Raised hematocrit can also cause dense MCA sign without an underlying AIS.',
+      'It is a result of occlusion in the PCA.',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 76,
+    question: 'MCA dot sign:',
+    answers: [
+      'is an area of hyperdensity of the distal MCA and its branches seen in the lateral sulcus (sylvian fissure).',
+      'cannot be identified on a CTA',
+      'an early ischemia CTP sign',
+      'typically represents hemorrhage.',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 77,
+    question: 'The arrow in the following NCCT and CTA shows:',
+    image: 'ncct-cta-dense-mca.png', // Place the image in your public folder and update the path if needed
+    answers: [
+      'Insular ribbon sign',
+      'Dense MCA sign',
+      'Loss of basal ganglia sign',
+      'Satellite sign',
+    ],
+    correctAnswerIndex: 1,
+    type: 'image',
+  },
+  {
+    id: 78,
+    question: 'Which early ischemia sign can be seen in both NCCT and CTA?',
+    answers: [
+      'Loss of basal ganglia sign.',
+      'Insular ribbon sign.',
+      'Dense MCA sign.',
+      'Swirl sign.',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 79,
+    question: 'ASPECTS:',
+    answers: [
+      'is a 20-point semiquantitative topographic scoring system',
+      'is used for the assessment of EICs on NCCT in patients with acute ischemic stroke involving the MCA territory.',
+      'aims to identify stroke patients who have a hematoma.',
+      'uses the ¼ rule.',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 80,
+    question: 'Which of the following statements about ASPECTS is false?',
+    answers: [
+      'Patients who show a small area of hypoattenuation - less than one-third of the MCA territory - on NCCT scans tend to benefit from thrombolytic therapy.',
+      'Applying the one-third rule to estimate volume accurately in routine clinical settings is often challenging.',
+      'ASPECT uses a topographic, quantitative approach that eliminates the need for physicians to estimate lesion volume from two-dimensional images.',
+      'If any portion of an ASPECTS region is affected, one point is deducted from the maximum score of 10, meaning that lower scores correspond to more extensive infarcts.',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 81,
+    question:
+      'Which of the following statements about cerebral collateral circulation is false?',
+    answers: [
+      'It is a network of vascular channels that keeps supplying blood to the ischemic regions in case of occlusion of the principal vessels.',
+      'Collateral blood network consists of extracranial (external carotid artery branches), and intracranial routes (communicating arteries of the circle of Willis and leptomeningeal collaterals).',
+      'Good collateral circulation preserves the blood supply to the penumbral area in the acute stage.',
+      'Absence of collateral circulation is associated with higher reperfusion rate, smaller infarct volume, lower rate of hemorrhagic transformation, and better neurological outcome after medical treatment or EVT.',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 82,
+    question:
+      'Which of the following statements about CTA for AIS evaluation is false?',
+    answers: [
+      'It provides information about the presence, site, permeability, and length of vessel occlusion.',
+      'It can help to find underlying pathophysiology of the stroke, including arterial dissection, carotid or intracranial atherosclerosis, carotid web, and intracranial vasculopathy.',
+      'It cannot provide information about the collateral circulation status.',
+      'It evaluates the head and neck vessels and therefore provides essential knowledge concerning the access of an intracranial target.',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 83,
+    question: 'Multiphase CTA:',
+    answers: [
+      'Has better sensitivity to detect vessel occlusion, the length of clot and potentially the extent of ischemic core.',
+      'It cannot evaluate the collateral circulation.',
+      'Has lower radiation dose than single CTA.',
+      'The quality of assessment is independent from hemodynamics.',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 77,
+    question: 'The arrow in the following NCCT and CTA shows:',
+    image: 'ncct-cta-dense-mca.png', // Place the image in your public folder and update the path if needed
+    answers: [
+      'Insular ribbon sign',
+      'Dense MCA sign',
+      'Loss of basal ganglia sign',
+      'Satellite sign',
+    ],
+    correctAnswerIndex: 1,
+    type: 'image',
+  },
+  {
+    id: 78,
+    question: 'Which early ischemia sign can be seen in both NCCT and CTA?',
+    answers: [
+      'Loss of basal ganglia sign.',
+      'Insular ribbon sign.',
+      'Dense MCA sign.',
+      'Swirl sign.',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 79,
+    question: 'ASPECTS:',
+    answers: [
+      'is a 20-point semiquantitative topographic scoring system',
+      'is used for the assessment of EICs on NCCT in patients with acute ischemic stroke involving the MCA territory.',
+      'aims to identify stroke patients who have a hematoma.',
+      'uses the ¼ rule.',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 80,
+    question: 'Which of the following statements about ASPECTS is false?',
+    answers: [
+      'Patients who show a small area of hypoattenuation - less than one-third of the MCA territory - on NCCT scans tend to benefit from thrombolytic therapy.',
+      'Applying the one-third rule to estimate volume accurately in routine clinical settings is often challenging.',
+      'ASPECT uses a topographic, quantitative approach that eliminates the need for physicians to estimate lesion volume from two-dimensional images.',
+      'If any portion of an ASPECTS region is affected, one point is deducted from the maximum score of 10, meaning that lower scores correspond to more extensive infarcts.',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 81,
+    question:
+      'Which of the following statements about cerebral collateral circulation is false?',
+    answers: [
+      'It is a network of vascular channels that keeps supplying blood to the ischemic regions in case of occlusion of the principal vessels.',
+      'Collateral blood network consists of extracranial (external carotid artery branches), and intracranial routes (communicating arteries of the circle of Willis and leptomeningeal collaterals).',
+      'Good collateral circulation preserves the blood supply to the penumbral area in the acute stage.',
+      'Absence of collateral circulation is associated with higher reperfusion rate, smaller infarct volume, lower rate of hemorrhagic transformation, and better neurological outcome after medical treatment or EVT.',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 82,
+    question:
+      'Which of the following statements about CTA for AIS evaluation is false?',
+    answers: [
+      'It provides information about the presence, site, permeability, and length of vessel occlusion.',
+      'It can help to find underlying pathophysiology of the stroke, including arterial dissection, carotid or intracranial atherosclerosis, carotid web, and intracranial vasculopathy.',
+      'It cannot provide information about the collateral circulation status.',
+      'It evaluates the head and neck vessels and therefore provides essential knowledge concerning the access of an intracranial target.',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 83,
+    question: 'Multiphase CTA:',
+    answers: [
+      'Has better sensitivity to detect vessel occlusion, the length of clot and potentially the extent of ischemic core.',
+      'It cannot evaluate the collateral circulation.',
+      'Has lower radiation dose than single CTA.',
+      'The quality of assessment is independent from hemodynamics.',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 84,
+    question: 'The arrow on the following image shows:',
+    image: 'cta-m1-cutoff.png', // Place the image in your public folder and update the path if needed
+    answers: [
+      'Proximal Left M1 cut off on CTA',
+      'Proximal left M1 cut off on DSA',
+      'Collateral circulation',
+      'The clot length',
+    ],
+    correctAnswerIndex: 0,
+    type: 'image',
+  },
+  {
+    id: 85,
+    question:
+      'Which of the following is not a sign of vessel occlusion in CTA?',
+    answers: [
+      'Contrast cut off',
+      'MCA dot sign',
+      'Dense MCA',
+      'Insular ribbon sign',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 86,
+    question: 'Computed tomography angiography (CTA):',
+    answers: [
+      'is a CT-based imaging method designed to visualize soft tissue.',
+      'gives a 2D image result.',
+      'produces images that help detect blockages, aneurysms, dissections, and stenosis.',
+      'is a CT-based imaging method based on the photoelectric effect.',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 87,
+    question: 'Bremsstrahlung radiation:',
+    answers: [
+      'is also called braking radiation',
+      'is produced when a photon changes its trajectory while approaching an atomic nucleus',
+      'is present in MRI principles of operation',
+      'leads to electron emission.',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 88,
+    question: 'Characteristic radiation:',
+    answers: [
+      'is produced when a fast electron collides with an orbit electron and provides kinetic energy lower than the binding energy of the electron in that shell.',
+      'is produced when a fast electron collides with an orbit electron and provides kinetic energy that exceeds the binding energy of the electron in that shell.',
+      'K is the radiation produced by an electron transition from K to L shell.',
+      'is not useful for CT',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 89,
+    question:
+      'Which one of the following statements about characteristic radiation is false?',
+    answers: [
+      'The highest binding energy is that of the inner shell K.',
+      'Binding energy decreases from K to the outer shells.',
+      'The scattered primary electron carries away the difference of kinetic energy and binding energy and a vacancy is created in the shell.',
+      'An electron of an inner shell fills that vacancy and therefore, a photon is emitted with energy equivalent to the difference of the binding energies of the two shells.',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 90,
+    question: 'Beer’s law:',
+    answers: [
+      'Is described by the equation I(x)=I0*e-μx for primary and monoenergetic beam.',
+      'Is described by the equation I(x)=I0*e-μx for primary beam and scattered radiation.',
+      'Is described by the equation I(x)=I0*e-μx for primary and polyenergetic beam.',
+      'Is described by the equation HUmaterial  = [ (μmaterial - μwater) / μwater ] * 1000.',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 91,
+    question: 'Which of the following statement about CT is false?',
+    answers: [
+      "It is based on the radiation – mater interaction that happens between the X rays produced from the tube and the patients' tissues.",
+      'The final product is a photon attenuation map of the patient based on the attenuation of a beam of X rays as it passes through a certain tissue.',
+      'During the rotation of the system, a large number of views can be obtained.',
+      'The final product is a photon attenuation map of the beam of X rays based on the attenuation of a tissue it passes through.',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 92,
+    question: 'The linear attenuation coefficient does not depend on:',
+    answers: [
+      'the composition of the material',
+      'the density of the material',
+      'the distance from the source',
+      'the photon energy',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 93,
+    question: 'HU scale:',
+    answers: [
+      'is a standardized scale that represents the relative density of the matelial of anode of the X ray tube.',
+      'is expressed relative to the linear attenuation coefficient of water at room temperature.',
+      'is expressed relative to the linear attenuation coefficient of air at room temperature.',
+      'has a range from –1024 HU to +3071 HU for a bit depth 8.',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 94,
+    question: 'HU scale is expressed according to the following equation.',
+    answers: [
+      'HUmaterial  = [ (μmaterial - μwater) / μwater ] * 100',
+      'HUmaterial  = [ (μmaterial - μair) / μair ] * 1000',
+      'HUmaterial  = [ μwater / (μmaterial - μwater) ] * 1000',
+      'HUmaterial  = [ (μmaterial - μwater) / μwater ] * 1000',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 95,
+    question:
+      'Which of the following statements about Hounsfield Unites (HU) is false?',
+    answers: [
+      'HUwater = 0',
+      'HUair = - 1000',
+      'HUlung = 0',
+      'HU = 1 is associated with 0.1% of the linear attenuation coefficient of water',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 96,
+    question:
+      'Which of the following statements about Hounsfield Unites (HU) is false?',
+    answers: [
+      'Dense tissues like bone correspond to higher HU units while others like lung (large cavities filled with air) correspond to lower HU units.',
+      'Tissues and substances exhibit a non-linear relationship of their linear attenuation coefficient relative to that of water.',
+      'Extending the Hounsfield scale by extending the bit depth can be helpful for materials with high density and a high linear attenuation coefficient.',
+      'Window level is the range of HU from white to black and window width is the central HU value.',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 97,
+    question: 'Which of the following statements is correct about X ray tube?',
+    answers: [
+      'Electrons flow from anode to cathode due to the accelerating potential difference applied between them.',
+      'Electrons flow from cathode to anode due to the accelerating potential difference applied between them.',
+      'The filament should stay in higher temperatures to help evaporation.',
+      'The material used should have low atomic number',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 98,
+    question:
+      'Which of the following statements about the anode of an X ray tube is false?',
+    answers: [
+      'When electrons strike the anode target, the majority of their energy is transformed into heat, with only a small portion converted into X-rays.',
+      'The rotation of the anode spreads the heat over a larger area, allowing different sections to absorb the thermal load continuously.',
+      'For the material used a high Bremsstrahlung yield is essential, which necessitates the use of materials with high atomic numbers (Z).',
+      'The most intense and clinically useful portion is absorbed by the surrounding tube housing.',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 99,
+    question: 'The tube envelope of an X ray tube:',
+    answers: [
+      'provides radiation shielding to prevent any radiation except the primary beam from leaving the housing.',
+      'consists of tungsten sheets.',
+      'shapes the beam.',
+      'surrounds all the parts of the x ray tube except from the anode target.',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 100,
+    question: 'Choose the correct statement about focal spot.',
+    answers: [
+      'The specific area on the cathode where the electron beam strikes is called focal spot.',
+      'Actual focal spot size depends on the width of the electron beam, which increases with filament size and tube current (mA).',
+      'Effective focal spot size = Actual focal spot size × cos(anode angle)',
+      'Large filament creates a smaller focal spot.',
+    ],
+    correctAnswerIndex: 1,
+    type: 'text',
+  },
+  {
+    id: 101,
+    question: 'Which of the following statement about X ray tube is false?',
+    answers: [
+      'X-rays are produced slightly beneath the surface of the anode, not directly on it.',
+      'Collimators are used to create the ‘dose slice’ (or’cone’) shape of the beam.',
+      'Beam shaping filters are positioned near the X-ray tube and are designed to create a gradient in the intensity of electrons emission from the cathode.',
+      'CT detectors used nowadays are solid state detectors.',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 102,
+    question: 'Concerning image recontruction techniques:',
+    answers: [
+      'Filtered backprojection is not a commonly used reconstruction technique.',
+      'It is the procedure of transformation of one slice images into cross-sectional images.',
+      'They increase the dose for the patient.',
+      'Filtered backprojection involves the object space, the Radon space and the Fourier space.',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 103,
+    question: 'Which of the following is not a CT image acquisition technique:',
+    answers: [
+      'Scan projection radiograph –SRP',
+      'Axial CT',
+      'Helical CT',
+      'Filtered backprojection',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 104,
+    question: 'Tube current (mA) does not:',
+    answers: [
+      'reduce image noise when increased.',
+      'determine the number of electrons, and thus X-ray photons produced per unit time multiplied by rotation time.',
+      'affect the contrast or Hounsfield Unit (HU) values.',
+      'have a linear impact on radiation dose.',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 105,
+    question: 'Tube voltage (kVp):',
+    answers: [
+      'refers to the peak energy of X-ray photons.',
+      'does not influence penetration, contrast, and dose.',
+      'has a linear impact on radiation dose.',
+      'when increased increases image noise.',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 106,
+    question: 'Which of the following statements is correct?',
+    answers: [
+      'Spatial resolution refers to the ability to observe contours of small objects within the scanned volume.',
+      'Contrast resolution refers to the ability to observe contours of small objects within the scanned volume.',
+      'Small objects are visible only if there is a small difference in signal (Hounsfield units) between them and their direct environment.',
+      'Spatial resolution refers to the ability to differentiate tissues with similar anatomy.',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 107,
+    question: 'Choose the correct statement about contrast agent phases:',
+    answers: [
+      'In early arterial phase contrast is still in the arteries and has not arrived at the organs and other soft tissues.',
+      'In nephrogenic phase contrast is still in the arteries and has not arrived at the organs and other soft tissues.',
+      'Portal venous phase takes places 15-25seconds from the injection.',
+      'Early arterial phase takes place 70-90 seconds from the injection.',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
+  },
+  {
+    id: 108,
+    question:
+      'Which of the following statement about contrast agents is false?',
+    answers: [
+      'Contrast agents are substances specifically used to increase the contrast between the target tissue and surrounding tissues.',
+      'CT scans mainly use iodine-based contrast agents intravenously.',
+      'In the central nervous system (CNS), the blood-brain barrier (BBB) restricts the movement of contrast agents into brain tissue.',
+      'CTA is performed using the nephrogenic phase of intravascular contrast.',
+    ],
+    correctAnswerIndex: 3,
+    type: 'text',
+  },
+  {
+    id: 109,
+    question:
+      "Which of the following is not included in iodinated contrast agents' contraindications?",
+    answers: [
+      'Renal impairment',
+      'Known allergy or hypersensitivity.',
+      'Signs of acute ischemic stroke.',
+      'Certain thyroid disorders.',
+    ],
+    correctAnswerIndex: 2,
+    type: 'text',
+  },
+  {
+    id: 110,
+    question: 'The fundamental principles of radiation include:',
+    answers: [
+      'Justification which refers to the necessity of having a clear clinician benefit from any decision that includes exposure to radiation.',
+      'Optimization which refers to the necessity of having a clear clinician benefit from any decision that includes exposure to radiation.',
+      'Dose limitation which is often summarized by the acronym ALARA (As Low As Reasonably Achievable).',
+      'Justification which is often summarized by the acronym ALARA (As Low As Reasonably Achievable).',
+    ],
+    correctAnswerIndex: 0,
+    type: 'text',
   },
 ];
