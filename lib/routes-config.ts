@@ -102,20 +102,20 @@ export const ROUTES: EachRoute[] = [
     ],
   },
   {
-    title: 'The educational application',
+    title: 'The development of the educational application',
     href: '/chapter-6',
     noLink: true,
     items: [
       {
-        title: 'Development of the educational application',
-        href: '/development',
+        title: 'Methods and technologies used',
+        href: '/methods-and-technologies-used',
       },
       {
-        title: 'Methods and technologies',
-        href: '/methods',
+        title: 'Theoretical Content and Self Assessment Quiz',
+        href: '/theoretical-content-and-self-assessment-quiz',
       },
       { title: 'Vercel Application & Github Code', href: '/vercel' },
-      { title: 'Limitations', href: '/limitations' },
+      { title: 'Limitations and future work', href: '/limitations' },
     ],
   },
   {

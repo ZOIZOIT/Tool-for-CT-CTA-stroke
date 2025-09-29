@@ -20,7 +20,7 @@ const monoFont = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'CTA-CTA Education',
+  title: 'CTA-CTA for Stroke Education',
 };
 
 export default function RootLayout({

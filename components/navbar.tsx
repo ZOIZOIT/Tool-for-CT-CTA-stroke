@@ -10,7 +10,7 @@ import { SheetClose } from '@/components/ui/sheet';
 
 export const NAVLINKS = [
   {
-    title: 'Learn About CT-CTA',
+    title: 'Learn About CT-CTA for Stroke',
     href: `/docs${page_routes[0].href}`,
   },
   // {
@@ -52,7 +52,7 @@ export function Navbar() {
             <Search />
             <div className='flex ml-2.5 sm:ml-0'>
               <Link
-                href='https://github.com/IliasKatsinaris/OCT-app'
+                href='https://github.com/ZOIZOIT/Tool-for-CT-CTA-stroke'
                 className={buttonVariants({ variant: 'ghost', size: 'icon' })}
               >
                 <GithubIcon className='h-[1.1rem] w-[1.1rem]' />
@@ -70,7 +70,9 @@ export function Logo() {
   return (
     <Link href='/' className='flex items-center gap-2.5'>
       <CommandIcon className='w-6 h-6 text-muted-foreground' strokeWidth={2} />
-      <h2 className='text-md font-bold font-code'>CT-CTA Learning Hub</h2>
+      <h2 className='text-md font-bold font-code'>
+        CT-CTA for Stroke Learning Hub
+      </h2>
     </Link>
   );
 }
