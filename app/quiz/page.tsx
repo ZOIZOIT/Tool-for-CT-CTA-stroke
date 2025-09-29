@@ -72,9 +72,9 @@ const Quiz = () => {
     return (
       <div className='container'>
         <div className='welcomeCard bg-background'>
-          <h1 className='title'>Welcome to the CTA-CTA for Stroke Quiz!</h1>
+          <h1 className='title'>Welcome to the CT-CTA for Stroke Quiz!</h1>
           <p style={{ marginBottom: '20px' }}>
-            Test your knowledge about CTA-CTA for Stroke, challenge yourself,
+            Test your knowledge about CT-CTA for Stroke, challenge yourself,
             and see how much you know!
           </p>
           <button className='button' onClick={handleStartQuiz}>
@@ -203,7 +203,7 @@ const Quiz = () => {
   return (
     <div className='container '>
       <div className='card bg-background'>
-        <h1 className='title'>CTA</h1>
+        <h1 className='title'>CT-CTA for Stroke Quiz</h1>
 
         <div className='questionSection'>
           <h2 className='questionNumber'>
