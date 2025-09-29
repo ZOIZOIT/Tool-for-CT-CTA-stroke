@@ -1,4 +1,11 @@
-export const questionsData = [
+export const questionsData: {
+  id: number;
+  question: string;
+  questionImage?: string;
+  answers: string[];
+  correctAnswerIndex: number;
+  type: 'text' | 'image';
+}[] = [
   {
     id: 1,
     question: 'The 4 key features of a stroke are',
@@ -15,7 +22,7 @@ export const questionsData = [
     id: 2,
     question:
       'Which of the following figures show a stroke in evolution (horizontal axis represents time and perpendicular axis the severity of deficit)?',
-    answers: ['figure-a.png', 'figure-b.png', 'figure-c.png', 'figure-d.png'],
+    answers: ['quiz/2/a.png', 'quiz/2/b.png', 'quiz/2/c.png', 'quiz/2/d.png'],
     correctAnswerIndex: 2,
     type: 'image',
   },
@@ -23,7 +30,7 @@ export const questionsData = [
     id: 3,
     question:
       'Which of the following figures show a transient ischemic attack (horizontal axis represents time and perpendicular axis the severity of deficit)?',
-    answers: ['figure-a.png', 'figure-b.png', 'figure-c.png', 'figure-d.png'],
+    answers: ['quiz/3/a.png', 'quiz/3/b.png', 'quiz/3/c.png', 'quiz/3/d.png'],
     correctAnswerIndex: 0,
     type: 'image',
   },
@@ -41,6 +48,7 @@ export const questionsData = [
   },
   {
     id: 5,
+    questionImage: 'quiz/5/q.png',
     question: 'Based on the following images choose the correct answer.',
     answers: [
       '(A) Left deep ICH on NCCT (B) CTA showing presence of spot sign (C) Follow-up NCCT at 19 hours demonstrating significant hematoma growth with severe midline shift and massive intraventricular extension',
@@ -49,10 +57,11 @@ export const questionsData = [
       '(A) Left deep ICH on CTA (B) NCCT showing presence of spot sign (C) Follow-up NCCT at 6 months demonstrating significant hematoma growth with severe midline shift and massive intraventricular extension',
     ],
     correctAnswerIndex: 0,
-    type: 'image',
+    type: 'text',
   },
   {
     id: 6,
+    questionImage: 'quiz/6/q.png',
     question: 'Circle the correct answer based on the following figure.',
     answers: [
       '1. Acute, 2. Hyperacute, 3. Subacute, 4. Chronic, 5. Gliosis, 6. Grey matter, 7. White matter',
@@ -61,7 +70,7 @@ export const questionsData = [
       '1. Hyperacute, 2. Acute, 3. Subacute, 4. Chronic, 5. Gliosis, 6. Grey matter, 7. White matter',
     ],
     correctAnswerIndex: 3,
-    type: 'image',
+    type: 'text',
   },
   {
     id: 7,
@@ -102,6 +111,7 @@ export const questionsData = [
   {
     id: 10,
     question: 'When estimating the hematoma volume with the ABC/2 technique:',
+    questionImage: 'quiz/10/q.png',
     answers: [
       'We select the axial CT image with the largest area of hemorrhage. A is the largest diameter on this slice and B the perpendicular the middle of A. C is the slice thickness multiplied by the number of slices in which the hematoma is visible.',
       'We select the axial CT image with the smallest area of hemorrhage. A is the largest diameter on this slice and B the perpendicular in the middle A. C is the slice thickness multiplied by the number of slices in which the hematoma is visible.',
@@ -298,6 +308,7 @@ export const questionsData = [
   {
     id: 26,
     question: 'Based on the images below, choose the correct answer:',
+    questionImage: 'quiz/26/q.png',
     answers: [
       '1. Black hole sign, 2. Island sign, 3. Spot sign, 4. Blend sign, 5. Swirl sign, 6. Satellite sign',
       '1. Black hole sign, 2. Satellite sign, 3. Spot sign, 4. Blend sign, 5. Swirl sign, 6. Island sign',
@@ -305,7 +316,7 @@ export const questionsData = [
       '1. Black hole sign, 2. Island sign, 3. Spot sign, 4. Swirl sign, 5. Blend sign, 6. Satellite sign',
     ],
     correctAnswerIndex: 0,
-    type: 'image',
+    type: 'text',
   },
   {
     id: 27,
@@ -845,7 +856,7 @@ export const questionsData = [
   {
     id: 71,
     question: 'The arrow in the NCCT below shows:',
-    image: 'ncct-basal-ganglia.png', // Place the image in your public folder and update the path if needed
+    questionImage: 'quiz/71/q.png',
     answers: [
       'loss of right basal ganglia 2 hours (a) and one day (b) after AIS onset.',
       'MCA dot sign loss of right basal ganglia.',
@@ -853,12 +864,12 @@ export const questionsData = [
       'Contrast agent leak in basal ganglia.',
     ],
     correctAnswerIndex: 0,
-    type: 'image',
+    type: 'text',
   },
   {
     id: 72,
     question: 'The arrow in the NCCT below shows:',
-    image: 'ncct-insular-ribbon.png', // Place the image in your public folder and update the path if needed
+    questionImage: 'quiz/72/q.png',
     answers: [
       'MCA dot sign',
       'Insular ribbon sign',
@@ -866,7 +877,7 @@ export const questionsData = [
       'Dense MCA sign',
     ],
     correctAnswerIndex: 1,
-    type: 'image',
+    type: 'text',
   },
   {
     id: 73,
@@ -921,7 +932,7 @@ export const questionsData = [
   {
     id: 77,
     question: 'The arrow in the following NCCT and CTA shows:',
-    image: 'ncct-cta-dense-mca.png', // Place the image in your public folder and update the path if needed
+    questionImage: 'quiz/77/q.png',
     answers: [
       'Insular ribbon sign',
       'Dense MCA sign',
@@ -929,94 +940,7 @@ export const questionsData = [
       'Satellite sign',
     ],
     correctAnswerIndex: 1,
-    type: 'image',
-  },
-  {
-    id: 78,
-    question: 'Which early ischemia sign can be seen in both NCCT and CTA?',
-    answers: [
-      'Loss of basal ganglia sign.',
-      'Insular ribbon sign.',
-      'Dense MCA sign.',
-      'Swirl sign.',
-    ],
-    correctAnswerIndex: 2,
     type: 'text',
-  },
-  {
-    id: 79,
-    question: 'ASPECTS:',
-    answers: [
-      'is a 20-point semiquantitative topographic scoring system',
-      'is used for the assessment of EICs on NCCT in patients with acute ischemic stroke involving the MCA territory.',
-      'aims to identify stroke patients who have a hematoma.',
-      'uses the ¼ rule.',
-    ],
-    correctAnswerIndex: 1,
-    type: 'text',
-  },
-  {
-    id: 80,
-    question: 'Which of the following statements about ASPECTS is false?',
-    answers: [
-      'Patients who show a small area of hypoattenuation - less than one-third of the MCA territory - on NCCT scans tend to benefit from thrombolytic therapy.',
-      'Applying the one-third rule to estimate volume accurately in routine clinical settings is often challenging.',
-      'ASPECT uses a topographic, quantitative approach that eliminates the need for physicians to estimate lesion volume from two-dimensional images.',
-      'If any portion of an ASPECTS region is affected, one point is deducted from the maximum score of 10, meaning that lower scores correspond to more extensive infarcts.',
-    ],
-    correctAnswerIndex: 3,
-    type: 'text',
-  },
-  {
-    id: 81,
-    question:
-      'Which of the following statements about cerebral collateral circulation is false?',
-    answers: [
-      'It is a network of vascular channels that keeps supplying blood to the ischemic regions in case of occlusion of the principal vessels.',
-      'Collateral blood network consists of extracranial (external carotid artery branches), and intracranial routes (communicating arteries of the circle of Willis and leptomeningeal collaterals).',
-      'Good collateral circulation preserves the blood supply to the penumbral area in the acute stage.',
-      'Absence of collateral circulation is associated with higher reperfusion rate, smaller infarct volume, lower rate of hemorrhagic transformation, and better neurological outcome after medical treatment or EVT.',
-    ],
-    correctAnswerIndex: 3,
-    type: 'text',
-  },
-  {
-    id: 82,
-    question:
-      'Which of the following statements about CTA for AIS evaluation is false?',
-    answers: [
-      'It provides information about the presence, site, permeability, and length of vessel occlusion.',
-      'It can help to find underlying pathophysiology of the stroke, including arterial dissection, carotid or intracranial atherosclerosis, carotid web, and intracranial vasculopathy.',
-      'It cannot provide information about the collateral circulation status.',
-      'It evaluates the head and neck vessels and therefore provides essential knowledge concerning the access of an intracranial target.',
-    ],
-    correctAnswerIndex: 2,
-    type: 'text',
-  },
-  {
-    id: 83,
-    question: 'Multiphase CTA:',
-    answers: [
-      'Has better sensitivity to detect vessel occlusion, the length of clot and potentially the extent of ischemic core.',
-      'It cannot evaluate the collateral circulation.',
-      'Has lower radiation dose than single CTA.',
-      'The quality of assessment is independent from hemodynamics.',
-    ],
-    correctAnswerIndex: 0,
-    type: 'text',
-  },
-  {
-    id: 77,
-    question: 'The arrow in the following NCCT and CTA shows:',
-    image: 'ncct-cta-dense-mca.png', // Place the image in your public folder and update the path if needed
-    answers: [
-      'Insular ribbon sign',
-      'Dense MCA sign',
-      'Loss of basal ganglia sign',
-      'Satellite sign',
-    ],
-    correctAnswerIndex: 1,
-    type: 'image',
   },
   {
     id: 78,
@@ -1095,7 +1019,7 @@ export const questionsData = [
   {
     id: 84,
     question: 'The arrow on the following image shows:',
-    image: 'cta-m1-cutoff.png', // Place the image in your public folder and update the path if needed
+    questionImage: 'quiz/84/q.png',
     answers: [
       'Proximal Left M1 cut off on CTA',
       'Proximal left M1 cut off on DSA',
@@ -1103,7 +1027,7 @@ export const questionsData = [
       'The clot length',
     ],
     correctAnswerIndex: 0,
-    type: 'image',
+    type: 'text',
   },
   {
     id: 85,

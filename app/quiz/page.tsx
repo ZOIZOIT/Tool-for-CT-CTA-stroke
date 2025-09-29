@@ -9,7 +9,13 @@ const NUMBER_OF_QUESTIONS = 30;
 const Quiz = () => {
   const [isWelcome, setIsWelcome] = useState(true);
   const [quizQuestions, setQuizQuestions] = useState<
-    { question: string; answers: string[]; correctAnswerIndex: number }[]
+    {
+      question: string;
+      answers: string[];
+      correctAnswerIndex: number;
+      questionImage?: string;
+      type: 'text' | 'image';
+    }[]
   >([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState<number[]>([]);
@@ -66,10 +72,10 @@ const Quiz = () => {
     return (
       <div className='container'>
         <div className='welcomeCard bg-background'>
-          <h1 className='title'>Welcome to the Retina / OCT Quiz!</h1>
+          <h1 className='title'>Welcome to the CTA-CTA for Stroke Quiz!</h1>
           <p style={{ marginBottom: '20px' }}>
-            Test your knowledge about retinal physiology, OCT technology, and
-            more.
+            Test your knowledge about CTA-CTA for Stroke, challenge yourself,
+            and see how much you know!
           </p>
           <button className='button' onClick={handleStartQuiz}>
             Start Quiz
@@ -90,6 +96,8 @@ const Quiz = () => {
     question: string;
     correctAnswer: string;
     yourAnswer: string;
+    questionImage?: string;
+    type: 'text' | 'image';
   }[] = [];
 
   if (isSubmitted) {
@@ -104,6 +112,8 @@ const Quiz = () => {
             userAnswers[i] !== null
               ? q.answers[userAnswers[i]]
               : 'No answer selected',
+          questionImage: q.questionImage,
+          type: q.type,
         });
       }
     });
@@ -130,12 +140,48 @@ const Quiz = () => {
                   <li key={index} style={{ marginBottom: '12px' }}>
                     <p>
                       <strong>Q:</strong> {item.question}
+                      {item.questionImage && (
+                        <img
+                          src={`/${item.questionImage}`}
+                          alt='Question illustration'
+                          className='questionImage'
+                          style={{ maxWidth: '100%', margin: '12px 0' }}
+                        />
+                      )}
                     </p>
                     <p>
-                      <strong>Your Answer:</strong> {item.yourAnswer}
+                      <strong>Your Answer:</strong>{' '}
+                      {item.type === 'image' ? (
+                        <img
+                          src={`/${item.yourAnswer}`}
+                          alt='Your answer'
+                          className='answerImage'
+                          style={{
+                            maxWidth: '100px',
+                            maxHeight: '100px',
+                            margin: '8px',
+                          }}
+                        />
+                      ) : (
+                        item.yourAnswer
+                      )}
                     </p>
                     <p>
-                      <strong>Correct Answer:</strong> {item.correctAnswer}
+                      <strong>Correct Answer:</strong>{' '}
+                      {item.type === 'image' ? (
+                        <img
+                          src={`/${item.correctAnswer}`}
+                          alt='Correct answer'
+                          className='answerImage'
+                          style={{
+                            maxWidth: '100px',
+                            maxHeight: '100px',
+                            margin: '8px',
+                          }}
+                        />
+                      ) : (
+                        item.correctAnswer
+                      )}
                     </p>
                   </li>
                 ))}
@@ -153,17 +199,25 @@ const Quiz = () => {
 
   // 4) Quiz in Progress
   const currentQuestion = quizQuestions[currentQuestionIndex];
-
+  console.log('Current Question:', currentQuestion);
   return (
     <div className='container '>
       <div className='card bg-background'>
-        <h1 className='title'>Retina / OCT Quiz</h1>
+        <h1 className='title'>CTA</h1>
 
         <div className='questionSection'>
           <h2 className='questionNumber'>
             Question {currentQuestionIndex + 1} of {quizQuestions.length}
           </h2>
           <p className='questionText'>{currentQuestion.question}</p>
+          {currentQuestion.questionImage && (
+            <img
+              src={`/${currentQuestion.questionImage}`}
+              alt='Question illustration'
+              className='questionImage'
+              style={{ maxWidth: '100%', margin: '16px 0' }}
+            />
+          )}
         </div>
 
         <div className='answersContainer'>
@@ -172,7 +226,6 @@ const Quiz = () => {
             return (
               <label
                 key={index}
-                // Add an extra class if it's selected
                 className={
                   isSelected
                     ? 'answerOption answerSelected bg-background'
@@ -186,7 +239,20 @@ const Quiz = () => {
                   onChange={() => handleAnswerSelect(index)}
                   className='radioButton'
                 />
-                {answer}
+                {currentQuestion.type === 'image' ? (
+                  <img
+                    src={`/${answer}`}
+                    alt={`Answer option ${index + 1}`}
+                    className='answerImage'
+                    style={{
+                      maxWidth: '100px',
+                      maxHeight: '100px',
+                      margin: '8px',
+                    }}
+                  />
+                ) : (
+                  answer
+                )}
               </label>
             );
           })}
